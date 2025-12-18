@@ -1,0 +1,8 @@
+<div id="llm" class="llm-col">
+    <div class="llm-label">LLM says</div>
+    {% if recommendation %}
+        <div class="llm-decision">{{ recommendation.decision|upper }}</div>
+    {% else %}
+        <div class="llm-decision">-</div>
+    {% endif %}
+</div>

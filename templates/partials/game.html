@@ -1,0 +1,125 @@
+<div id="game-area">
+    <div class="stats">
+        <span class="stat">Balance: {{ '%+.1f'|format(game.stats.balance) }}</span>
+        <span class="stat">Hands: {{ game.stats.hands_played }}</span>
+    </div>
+
+    <div class="table">
+        {% if game.player_hands %}
+            <div class="hand-area">
+                <div class="hand-label">Dealer</div>
+                <div class="cards">
+                    {% for card in game.dealer_hand.cards %}
+                        {% if loop.index == 2 and game.round_active %}
+                            <div class="card hidden">?</div>
+                        {% else %}
+                            <div class="card {{ 'red' if card.suit.value in ['♥', '♦'] else '' }}">
+                                {{ card }}
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                {% if not game.round_active %}
+                    <div class="hand-value">{{ game.dealer_hand.value }}</div>
+                {% endif %}
+            </div>
+
+            <div class="player-hands">
+                {% for hand in game.player_hands %}
+                    <div class="player-hand {{ 'active' if loop.index0 == game.current_hand_index and game.round_active else '' }}">
+                        <div class="hand-label">
+                            {% if game.player_hands|length > 1 %}
+                                Hand {{ loop.index }}
+                            {% else %}
+                                Your Hand
+                            {% endif %}
+                        </div>
+                        <div class="cards">
+                            {% for card in hand.cards %}
+                                <div class="card {{ 'red' if card.suit.value in ['♥', '♦'] else '' }}">
+                                    {{ card }}
+                                </div>
+                            {% endfor %}
+                        </div>
+                        <div class="hand-value">{{ hand.value }}</div>
+                    </div>
+                {% endfor %}
+            </div>
+
+            {% if not game.round_active %}
+                <div>
+                    {% for hand, result in game.round_results %}
+                        <div class="result {{ result.value }}">
+                            {% if result.value == 'blackjack' %}
+                                🎰 BLACKJACK! (+1.5)
+                            {% elif result.value == 'win' %}
+                                ✓ You Win! (+{{ 2 if hand.is_doubled else 1 }})
+                            {% elif result.value == 'lose' %}
+                                ✗ Dealer Wins (-{{ 2 if hand.is_doubled else 1 }})
+                            {% elif result.value == 'surrender' %}
+                                ⚐ Surrendered (-0.5)
+                            {% else %}
+                                ➜ Push (0)
+                            {% endif %}
+                            {% if game.round_results|length > 1 %}
+                                (Hand {{ loop.index }})
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% else %}
+            <div style="text-align: center; padding: 80px 0; opacity: 0.7;">
+                Press Deal to start a new hand
+            </div>
+        {% endif %}
+    </div>
+
+    <div class="controls">
+        {% if not game.round_active %}
+            <button hx-post="/deal" hx-target="#game-area" hx-swap="outerHTML">
+                Deal
+            </button>
+        {% else %}
+            <button hx-post="/hit" hx-target="#game-area" hx-swap="outerHTML">
+                Hit
+            </button>
+            <button hx-post="/stand" hx-target="#game-area" hx-swap="outerHTML">
+                Stand
+            </button>
+            <button hx-post="/double" hx-target="#game-area" hx-swap="outerHTML"
+                    {% if not game.current_hand or not game.current_hand.can_double %}disabled{% endif %}>
+                Double
+            </button>
+            <button hx-post="/split" hx-target="#game-area" hx-swap="outerHTML"
+                    {% if not game.current_hand or not game.current_hand.can_split %}disabled{% endif %}>
+                Split
+            </button>
+            <button hx-post="/surrender" hx-target="#game-area" hx-swap="outerHTML"
+                    {% if not game.current_hand or not game.current_hand.can_surrender %}disabled{% endif %}>
+                Surrender
+            </button>
+        {% endif %}
+    </div>
+
+    {% if game.round_active %}
+        <div class="llm-box">
+            <div class="llm-row">
+                <div id="llm" class="llm-col"
+                     hx-get="/llm"
+                     hx-trigger="load"
+                     hx-swap="outerHTML">
+                    <div class="llm-label">LLM says</div>
+                    <div class="llm-decision skeleton-text"></div>
+                </div>
+                <div id="optimal" class="llm-col"
+                     hx-get="/optimal"
+                     hx-trigger="load"
+                     hx-swap="outerHTML">
+                    <div class="llm-label">Optimal play</div>
+                    <div class="llm-decision skeleton-text"></div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+</div>
