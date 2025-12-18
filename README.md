@@ -8,7 +8,7 @@ A benchmark for evaluating how well large language models play optimal blackjack
 
 | Model | Accuracy | Balance (1000 hands) |
 |-------|----------|----------------------|
-| Gemini 3 Flash | 98.2% | - |
+| Gemini 3 Flash | 98.2% | +19.50 |
 | GPT-5.2 | 89.2% | +25.00 |
 | Claude Opus 4.5 | 89.2% | +12.50 |
 | Claude Sonnet 4.5 | 83.2% | -13.50 |
