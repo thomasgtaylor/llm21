@@ -104,8 +104,10 @@ def create_leaderboard_table(models: dict[str, dict]) -> str:
             <tr data-model="{name}" data-rank="{rank}" data-provider="{provider}" data-accuracy="{stats["accuracy"]:.2f}" data-balance="{stats["balance"]:.2f}" data-mistakes="{stats["mistakes"]}">
                 <td class="rank">{rank}</td>
                 <td class="provider-cell" style="--accent-color: {color}">
-                    <img src="assets/{provider.lower()}.svg" alt="{provider}" class="provider-icon" onerror="this.style.display='none'">
-                    <span>{provider}</span>
+                    <div class="provider-content">
+                        <img src="assets/{provider.lower()}.svg" alt="{provider}" class="provider-icon" onerror="this.style.display='none'">
+                        <span>{provider}</span>
+                    </div>
                 </td>
                 <td class="model-cell">
                     <span class="model-name">{name}</span>
@@ -341,9 +343,6 @@ def create_dashboard(models: dict[str, dict]) -> str:
             width: 48px;
         }}
         .provider-cell {{
-            display: flex;
-            align-items: center;
-            gap: 10px;
             position: relative;
             padding-left: 20px !important;
         }}
@@ -356,6 +355,11 @@ def create_dashboard(models: dict[str, dict]) -> str:
             width: 3px;
             background: var(--accent-color);
             border-radius: 2px;
+        }}
+        .provider-content {{
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }}
         .provider-icon {{
             width: 20px;
