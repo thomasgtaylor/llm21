@@ -12,6 +12,7 @@ MODEL_INFO = {
     "claude-opus-4-5-20251101": {"name": "Claude Opus 4.5", "provider": "Anthropic"},
     "claude-sonnet-4-5-20250929": {"name": "Claude Sonnet 4.5", "provider": "Anthropic"},
     "gemini-3-flash-preview": {"name": "Gemini 3 Flash", "provider": "Google"},
+    "gemini-3-pro-preview": {"name": "Gemini 3 Pro", "provider": "Google"},
 }
 
 PROVIDER_COLORS = {

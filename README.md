@@ -6,6 +6,8 @@ A benchmark for evaluating how well large language models play optimal blackjack
 
 ## Results
 
+[View full benchmark results →](https://thomasgtaylor.com/blackjack)
+
 | Model | Accuracy | Balance (1000 hands) |
 |-------|----------|----------------------|
 | Gemini 3 Flash | 98.2% | +19.50 |
@@ -75,6 +77,9 @@ uv run python benchmark.py -n 1000 -o results.csv
 
 # Resume from a specific hand index
 uv run python benchmark.py -n 500 --start 500
+
+# Control concurrency (default: 5)
+uv run python benchmark.py -n 1000 -c 10
 ```
 
 ### Generate Visualization Dashboard

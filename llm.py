@@ -26,9 +26,20 @@ def get_model():
     model_name = os.getenv("MODEL")
     if not model_name:
         raise ValueError("MODEL environment variable not set")
-    return init_chat_model(model_name, max_retries=25).with_structured_output(
-        DecisionResponse
-    )
+
+    if model_name.startswith("openrouter:"):
+        actual_model_name = model_name.replace("openrouter:", "", 1)
+        model = init_chat_model(
+            model=actual_model_name,
+            model_provider="openai",
+            base_url="https://openrouter.ai/api/v1",
+            api_key=os.getenv("OPENROUTER_API_KEY"),
+            max_retries=25,
+        )
+    else:
+        model = init_chat_model(model_name, max_retries=25)
+
+    return model.with_structured_output(DecisionResponse)
 
 
 @dataclass

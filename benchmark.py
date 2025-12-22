@@ -8,8 +8,6 @@ from blackjack import Game, HandResult
 from llm import get_recommendation
 from strategy import get_optimal_play
 
-CONCURRENCY = 10
-
 
 @dataclass
 class DecisionRecord:
@@ -178,8 +176,9 @@ async def run_benchmark(
     num_hands: int,
     strategies: list[str],
     start: int = 0,
+    concurrency: int = 5,
 ) -> list[DecisionRecord]:
-    semaphore = asyncio.Semaphore(CONCURRENCY)
+    semaphore = asyncio.Semaphore(concurrency)
     completed = 0
 
     async def play_all_strategies_for_hand(hand_id: int) -> list[DecisionRecord]:
@@ -270,13 +269,22 @@ async def main():
         default="benchmark_results.csv",
         help="Output CSV file",
     )
+    parser.add_argument(
+        "-c",
+        "--concurrency",
+        type=int,
+        default=5,
+        help="Number of concurrent hands to process",
+    )
     args = parser.parse_args()
 
     print(f"Running benchmark with {args.num_hands} hands (starting at {args.start})")
     print(f"Strategies: {', '.join(args.strategies)}")
     print()
 
-    records = await run_benchmark(args.num_hands, args.strategies, args.start)
+    records = await run_benchmark(
+        args.num_hands, args.strategies, args.start, args.concurrency
+    )
 
     save_to_csv(records, args.output)
     print(f"\nResults saved to {args.output}")
