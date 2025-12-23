@@ -31,14 +31,6 @@ async def strategy_optimal(game: Game) -> str:
     return get_optimal_play(game.current_hand, game.dealer_hand)
 
 
-async def strategy_always_hit(game: Game) -> str:
-    return "hit"
-
-
-async def strategy_always_stand(game: Game) -> str:
-    return "stand"
-
-
 async def strategy_llm(game: Game) -> str:
     rec = await get_recommendation(game)
     return rec.decision if rec else "stand"
@@ -46,8 +38,6 @@ async def strategy_llm(game: Game) -> str:
 
 STRATEGIES: dict[str, Strategy] = {
     "optimal": strategy_optimal,
-    "always_hit": strategy_always_hit,
-    "always_stand": strategy_always_stand,
     "llm": strategy_llm,
 }
 
@@ -177,9 +167,12 @@ async def run_benchmark(
     strategies: list[str],
     start: int = 0,
     concurrency: int = 5,
+    csv_writer=None,
+    write_lock=None,
 ) -> list[DecisionRecord]:
     semaphore = asyncio.Semaphore(concurrency)
     completed = 0
+    all_records: list[DecisionRecord] = []
 
     async def play_all_strategies_for_hand(hand_id: int) -> list[DecisionRecord]:
         nonlocal completed
@@ -189,6 +182,13 @@ async def run_benchmark(
                 strategy_fn = STRATEGIES[strategy_name]
                 records = await play_hand(hand_id, hand_id, strategy_name, strategy_fn)
                 hand_records.extend(records)
+
+            if csv_writer and write_lock:
+                async with write_lock:
+                    for record in hand_records:
+                        csv_writer.writerow(asdict(record))
+
+            all_records.extend(hand_records)
             completed += 1
             print(f"Completed hand {completed}/{num_hands}")
             return hand_records
@@ -197,11 +197,7 @@ async def run_benchmark(
         play_all_strategies_for_hand(hand_id)
         for hand_id in range(start, start + num_hands)
     ]
-    results = await asyncio.gather(*tasks)
-
-    all_records: list[DecisionRecord] = []
-    for records in results:
-        all_records.extend(records)
+    await asyncio.gather(*tasks)
 
     return all_records
 
@@ -258,7 +254,7 @@ async def main():
         "-s",
         "--strategies",
         nargs="+",
-        default=["optimal", "always_hit", "always_stand", "llm"],
+        default=["llm"],
         choices=list(STRATEGIES.keys()),
         help="Strategies to benchmark",
     )
@@ -282,14 +278,60 @@ async def main():
     print(f"Strategies: {', '.join(args.strategies)}")
     print()
 
-    records = await run_benchmark(
-        args.num_hands, args.strategies, args.start, args.concurrency
-    )
+    fieldnames = [
+        "hand_id",
+        "seed",
+        "strategy",
+        "decision_num",
+        "player_cards",
+        "player_value",
+        "dealer_upcard",
+        "action",
+        "optimal_action",
+        "result",
+        "balance_change",
+    ]
 
-    save_to_csv(records, args.output)
-    print(f"\nResults saved to {args.output}")
+    records: list[DecisionRecord] = []
 
-    print_summary(records)
+    with open(args.output, "w", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        write_lock = asyncio.Lock()
+
+        try:
+            records = await run_benchmark(
+                args.num_hands,
+                args.strategies,
+                args.start,
+                args.concurrency,
+                csv_writer=writer,
+                write_lock=write_lock,
+            )
+            print(f"\nResults saved to {args.output}")
+        except KeyboardInterrupt:
+            print("\n\nBenchmark interrupted by user.")
+            print(f"Partial results saved to {args.output}")
+        except Exception as e:
+            print(f"\n\nBenchmark error: {e}")
+            print(f"Partial results saved to {args.output}")
+
+    if records:
+        with open(args.output, "r") as f:
+            reader = csv.DictReader(f)
+            rows = list(reader)
+
+        rows.sort(key=lambda x: (int(x["hand_id"]), int(x["decision_num"])))
+
+        with open(args.output, "w", newline="") as f:
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerows(rows)
+
+        print(f"Results sorted by hand_id in {args.output}")
+        print_summary(records)
+    else:
+        print("\nNo results collected.")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,1429 @@
+hand_id,seed,strategy,decision_num,player_cards,player_value,dealer_upcard,action,optimal_action,result,balance_change
+0,0,llm,0,4♠ 9♦,13,9♥,hit,hit,,
+0,0,llm,1,4♠ 9♦ 3♥,16,9♥,hit,hit,,
+0,0,llm,2,4♠ 9♦ 3♥ 3♠,19,9♥,stand,stand,win,1.0
+1,1,llm,0,5♦ 8♣,13,7♣,hit,hit,lose,-1.0
+2,2,llm,0,4♣ 6♠,10,9♠,double,double,win,2.0
+3,3,llm,0,6♦ 7♦,13,6♠,stand,stand,lose,-1.0
+4,4,llm,0,5♦ 2♥,7,A♠,hit,hit,,
+4,4,llm,1,5♦ 2♥ K♣,17,A♠,stand,stand,lose,-1.0
+5,5,llm,0,2♣ K♥,12,3♣,stand,hit,win,1.0
+6,6,llm,0,9♣ 3♠,12,4♠,stand,stand,lose,-1.0
+7,7,llm,0,J♥ 9♠,19,A♦,none,none,lose,-1.0
+8,8,llm,0,A♥ Q♣,21,9♣,none,none,blackjack,1.5
+9,9,llm,0,5♣ 8♣,13,J♣,hit,hit,,
+9,9,llm,1,5♣ 8♣ 6♠,19,J♣,stand,stand,win,1.0
+10,10,llm,0,8♣ K♥,18,5♦,stand,stand,win,1.0
+11,11,llm,0,Q♦ 6♣,16,2♣,stand,stand,lose,-1.0
+12,12,llm,0,10♣ Q♥,20,9♣,stand,stand,win,1.0
+13,13,llm,0,4♣ 6♠,10,7♠,double,double,push,0.0
+14,14,llm,0,4♥ J♦,14,J♥,hit,hit,,
+14,14,llm,1,4♥ J♦ 2♣,16,J♥,stand,hit,lose,-1.0
+15,15,llm,0,4♥ 8♥,12,7♥,hit,hit,,
+15,15,llm,1,4♥ 8♥ 4♣,16,7♥,hit,hit,lose,-1.0
+16,16,llm,0,5♣ A♣,16,8♣,hit,hit,,
+16,16,llm,1,5♣ A♣ 7♥,13,8♣,hit,hit,,
+16,16,llm,2,5♣ A♣ 7♥ A♥,14,8♣,hit,hit,lose,-1.0
+17,17,llm,0,9♥ A♠,20,6♥,stand,stand,push,0.0
+18,18,llm,0,3♠ 10♦,13,Q♥,hit,hit,,
+18,18,llm,1,3♠ 10♦ 7♦,20,Q♥,stand,stand,win,1.0
+19,19,llm,0,J♦ J♥,20,8♥,stand,stand,lose,-1.0
+20,20,llm,0,A♦ A♠,12,5♣,split,split,"win, win",2.0
+21,21,llm,0,8♣ K♠,18,8♥,stand,stand,lose,-1.0
+22,22,llm,0,8♦ A♥,19,9♦,stand,stand,win,1.0
+23,23,llm,0,7♠ 10♥,17,5♠,stand,stand,win,1.0
+24,24,llm,0,3♠ 4♠,7,A♣,hit,hit,,
+24,24,llm,1,3♠ 4♠ 9♣,16,A♣,hit,hit,lose,-1.0
+25,25,llm,0,K♣ 7♥,17,9♥,stand,stand,lose,-1.0
+26,26,llm,0,A♠ 2♦,13,3♥,hit,hit,,
+26,26,llm,1,A♠ 2♦ 7♦,20,3♥,stand,stand,win,1.0
+27,27,llm,0,K♣ 5♠,15,K♣,surrender,surrender,surrender,-0.5
+28,28,llm,0,7♥ 8♦,15,3♦,stand,stand,win,1.0
+29,29,llm,0,9♦ 10♦,19,A♣,stand,stand,lose,-1.0
+30,30,llm,0,5♦ 4♦,9,7♠,hit,hit,,
+30,30,llm,1,5♦ 4♦ 3♣,12,7♠,hit,hit,lose,-1.0
+31,31,llm,0,8♥ 7♥,15,8♣,hit,hit,lose,-1.0
+32,32,llm,0,2♠ J♦,12,7♥,hit,hit,,
+32,32,llm,1,2♠ J♦ 6♦,18,7♥,stand,stand,push,0.0
+33,33,llm,0,8♣ 4♦,12,9♣,hit,hit,lose,-1.0
+34,34,llm,0,Q♥ 2♠,12,2♣,hit,hit,,
+34,34,llm,1,Q♥ 2♠ 2♦,14,2♣,stand,stand,lose,-1.0
+35,35,llm,0,9♦ 4♦,13,4♦,stand,stand,lose,-1.0
+36,36,llm,0,A♥ Q♥,21,5♣,none,none,blackjack,1.5
+37,37,llm,0,A♠ 5♥,16,9♠,hit,hit,,
+37,37,llm,1,A♠ 5♥ 9♣,15,9♠,hit,hit,,
+37,37,llm,2,A♠ 5♥ 9♣ 5♦,20,9♠,stand,stand,win,1.0
+38,38,llm,0,9♥ 2♥,11,K♥,double,double,lose,-2.0
+39,39,llm,0,5♥ 4♠,9,4♣,double,double,win,2.0
+40,40,llm,0,2♣ 10♥,12,Q♣,hit,hit,lose,-1.0
+41,41,llm,0,2♠ 3♦,5,3♦,hit,hit,,
+41,41,llm,1,2♠ 3♦ 4♠,9,3♦,hit,hit,,
+41,41,llm,2,2♠ 3♦ 4♠ J♣,19,3♦,stand,stand,win,1.0
+42,42,llm,0,7♥ Q♣,17,A♥,none,none,lose,-1.0
+43,43,llm,0,8♦ 10♦,18,5♠,stand,stand,push,0.0
+44,44,llm,0,3♥ 6♦,9,8♥,hit,hit,,
+44,44,llm,1,3♥ 6♦ A♣,20,8♥,stand,stand,win,1.0
+45,45,llm,0,J♣ 4♠,14,7♥,hit,hit,,
+45,45,llm,1,J♣ 4♠ 4♠,18,7♥,stand,stand,lose,-1.0
+46,46,llm,0,2♠ 9♦,11,J♠,double,double,win,2.0
+47,47,llm,0,K♦ A♥,21,8♣,none,none,blackjack,1.5
+48,48,llm,0,9♦ 4♦,13,7♥,hit,hit,,
+48,48,llm,1,9♦ 4♦ 2♦,15,7♥,hit,hit,lose,-1.0
+49,49,llm,0,10♣ 5♥,15,9♦,hit,hit,lose,-1.0
+50,50,llm,0,9♠ 6♣,15,8♣,hit,hit,lose,-1.0
+51,51,llm,0,9♦ J♦,19,Q♠,stand,stand,win,1.0
+52,52,llm,0,9♣ 4♥,13,3♣,stand,stand,win,1.0
+53,53,llm,0,8♥ Q♠,18,A♦,stand,stand,lose,-1.0
+54,54,llm,0,7♦ K♦,17,5♦,stand,stand,push,0.0
+55,55,llm,0,9♠ K♦,19,J♠,stand,stand,lose,-1.0
+56,56,llm,0,2♣ 10♣,12,7♥,hit,hit,lose,-1.0
+57,57,llm,0,10♦ 4♠,14,8♣,hit,hit,lose,-1.0
+58,58,llm,0,K♣ 3♥,13,J♠,hit,hit,lose,-1.0
+59,59,llm,0,Q♥ 3♣,13,6♠,stand,stand,win,1.0
+60,60,llm,0,3♥ J♣,13,4♠,stand,stand,lose,-1.0
+61,61,llm,0,8♠ A♦,19,4♠,stand,stand,win,1.0
+62,62,llm,0,10♣ 9♣,19,Q♣,stand,stand,lose,-1.0
+63,63,llm,0,8♦ 9♠,17,A♠,stand,stand,lose,-1.0
+64,64,llm,0,J♣ K♠,20,K♥,stand,stand,win,1.0
+65,65,llm,0,6♥ K♠,16,6♠,stand,stand,lose,-1.0
+66,66,llm,0,Q♣ 3♦,13,5♥,stand,stand,win,1.0
+67,67,llm,0,A♣ 3♥,14,9♥,hit,hit,,
+67,67,llm,1,A♣ 3♥ 6♥,20,9♥,stand,stand,win,1.0
+68,68,llm,0,6♣ 6♥,12,J♠,hit,hit,,
+68,68,llm,1,6♣ 6♥ 9♦,21,J♠,stand,stand,win,1.0
+69,69,llm,0,8♦ 9♣,17,Q♠,stand,stand,lose,-1.0
+70,70,llm,0,10♥ 3♣,13,9♠,hit,hit,,
+70,70,llm,1,10♥ 3♣ 6♦,19,9♠,stand,stand,push,0.0
+71,71,llm,0,J♥ 6♥,16,2♥,stand,stand,win,1.0
+72,72,llm,0,K♣ 6♠,16,7♠,hit,hit,lose,-1.0
+73,73,llm,0,2♠ Q♠,12,Q♥,hit,hit,,
+73,73,llm,1,2♠ Q♠ 4♣,16,Q♥,hit,hit,,
+73,73,llm,2,2♠ Q♠ 4♣ 4♠,20,Q♥,stand,stand,push,0.0
+74,74,llm,0,5♥ 9♥,14,8♥,hit,hit,,
+74,74,llm,1,5♥ 9♥ 4♥,18,8♥,stand,stand,push,0.0
+75,75,llm,0,J♦ 4♦,14,2♠,hit,stand,lose,-1.0
+76,76,llm,0,9♣ 6♠,15,5♣,stand,stand,win,1.0
+77,77,llm,0,A♦ Q♠,21,Q♥,none,none,blackjack,1.5
+78,78,llm,0,7♠ Q♠,17,Q♠,stand,stand,win,1.0
+79,79,llm,0,J♦ J♦,20,5♦,stand,stand,push,0.0
+80,80,llm,0,J♣ 6♦,16,8♠,hit,hit,lose,-1.0
+81,81,llm,0,A♠ 6♦,17,K♦,none,none,lose,-1.0
+82,82,llm,0,J♦ K♠,20,5♠,stand,stand,win,1.0
+83,83,llm,0,9♠ 8♠,17,3♣,stand,stand,lose,-1.0
+84,84,llm,0,4♠ 5♠,9,8♦,hit,hit,,
+84,84,llm,1,4♠ 5♠ 9♥,18,8♦,stand,stand,lose,-1.0
+85,85,llm,0,K♠ 10♥,20,4♥,stand,stand,win,1.0
+86,86,llm,0,4♦ 8♥,12,K♦,hit,hit,lose,-1.0
+87,87,llm,0,J♦ 5♦,15,7♠,hit,hit,,
+87,87,llm,1,J♦ 5♦ 2♠,17,7♠,stand,stand,lose,-1.0
+88,88,llm,0,10♠ 3♦,13,8♠,hit,hit,lose,-1.0
+89,89,llm,0,4♠ 4♣,8,K♠,hit,hit,,
+89,89,llm,1,4♠ 4♣ 9♦,17,K♠,stand,stand,lose,-1.0
+90,90,llm,0,2♥ A♣,13,10♠,hit,hit,,
+90,90,llm,1,2♥ A♣ 3♠,16,10♠,hit,hit,,
+90,90,llm,2,2♥ A♣ 3♠ 4♥,20,10♠,stand,stand,push,0.0
+91,91,llm,0,5♠ Q♣,15,5♠,stand,stand,lose,-1.0
+92,92,llm,0,9♥ 5♣,14,6♥,stand,stand,lose,-1.0
+93,93,llm,0,8♠ K♦,18,5♣,stand,stand,win,1.0
+94,94,llm,0,8♦ K♥,18,4♠,stand,stand,win,1.0
+95,95,llm,0,A♥ 5♦,16,5♥,double,double,lose,-2.0
+96,96,llm,0,9♣ 9♠,18,7♥,stand,stand,lose,-1.0
+97,97,llm,0,10♠ 10♣,20,K♥,stand,stand,win,1.0
+98,98,llm,0,2♣ J♦,12,10♣,hit,hit,,
+98,98,llm,1,2♣ J♦ 8♥,20,10♣,stand,stand,push,0.0
+99,99,llm,0,K♠ K♠,20,A♣,stand,stand,push,0.0
+100,100,llm,0,J♦ K♦,20,3♣,stand,stand,lose,-1.0
+101,101,llm,0,K♣ 5♦,15,10♠,surrender,surrender,surrender,-0.5
+102,102,llm,0,Q♦ 10♣,20,3♣,stand,stand,win,1.0
+103,103,llm,0,A♦ 2♠,13,8♥,hit,hit,,
+103,103,llm,1,A♦ 2♠ Q♥,13,8♥,hit,hit,,
+103,103,llm,2,A♦ 2♠ Q♥ 2♠,15,8♥,hit,hit,,
+103,103,llm,3,A♦ 2♠ Q♥ 2♠ 4♣,19,8♥,stand,stand,win,1.0
+104,104,llm,0,Q♥ A♥,21,Q♠,none,none,blackjack,1.5
+105,105,llm,0,5♠ K♣,15,J♦,surrender,surrender,surrender,-0.5
+106,106,llm,0,K♣ K♦,20,10♥,stand,stand,push,0.0
+107,107,llm,0,J♦ J♥,20,K♣,stand,stand,win,1.0
+108,108,llm,0,3♦ 4♠,7,6♠,hit,hit,,
+108,108,llm,1,3♦ 4♠ K♣,17,6♠,stand,stand,win,1.0
+109,109,llm,0,2♠ 3♣,5,2♦,hit,hit,,
+109,109,llm,1,2♠ 3♣ 9♦,14,2♦,stand,stand,lose,-1.0
+110,110,llm,0,5♠ J♦,15,10♠,surrender,surrender,surrender,-0.5
+111,111,llm,0,6♥ 7♠,13,7♥,hit,hit,lose,-1.0
+112,112,llm,0,A♣ Q♠,21,Q♣,none,none,blackjack,1.5
+113,113,llm,0,4♦ J♥,14,Q♣,hit,hit,lose,-1.0
+114,114,llm,0,8♦ K♠,18,4♣,stand,stand,push,0.0
+115,115,llm,0,4♠ 8♥,12,J♠,hit,hit,,
+115,115,llm,1,4♠ 8♥ 7♥,19,J♠,stand,stand,win,1.0
+116,116,llm,0,10♠ J♠,20,8♦,stand,stand,win,1.0
+117,117,llm,0,7♦ 8♣,15,3♠,stand,stand,lose,-1.0
+118,118,llm,0,4♠ K♠,14,5♥,stand,stand,lose,-1.0
+119,119,llm,0,5♠ 4♦,9,3♠,double,double,lose,-2.0
+120,120,llm,0,5♥ 7♠,12,J♦,hit,hit,,
+120,120,llm,1,5♥ 7♠ 4♣,16,J♦,stand,hit,win,1.0
+121,121,llm,0,7♠ A♣,18,9♥,hit,hit,,
+121,121,llm,1,7♠ A♣ A♣,19,9♥,stand,stand,push,0.0
+122,122,llm,0,3♥ 8♠,11,7♥,double,double,win,2.0
+123,123,llm,0,2♣ 7♠,9,9♣,hit,hit,,
+123,123,llm,1,2♣ 7♠ 8♣,17,9♣,stand,stand,win,1.0
+124,124,llm,0,A♣ 4♥,15,9♦,hit,hit,,
+124,124,llm,1,A♣ 4♥ 6♣,21,9♦,stand,stand,win,1.0
+125,125,llm,0,9♦ 9♠,18,J♥,stand,stand,lose,-1.0
+126,126,llm,0,9♣ J♣,19,6♣,stand,stand,win,1.0
+127,127,llm,0,J♦ 4♣,14,K♣,hit,hit,,
+127,127,llm,1,J♦ 4♣ A♥,15,K♣,hit,hit,,
+127,127,llm,2,J♦ 4♣ A♥ 4♦,19,K♣,stand,stand,lose,-1.0
+128,128,llm,0,6♦ 3♥,9,A♠,hit,hit,,
+128,128,llm,1,6♦ 3♥ 5♦,14,A♠,hit,hit,,
+128,128,llm,2,6♦ 3♥ 5♦ 2♠,16,A♠,hit,hit,,
+128,128,llm,3,6♦ 3♥ 5♦ 2♠ 3♦,19,A♠,stand,stand,win,1.0
+129,129,llm,0,3♠ J♣,13,8♥,hit,hit,lose,-1.0
+130,130,llm,0,8♥ J♣,18,J♥,stand,stand,push,0.0
+131,131,llm,0,7♥ 2♥,9,10♣,hit,hit,,
+131,131,llm,1,7♥ 2♥ 8♠,17,10♣,stand,stand,push,0.0
+132,132,llm,0,5♥ 2♥,7,3♣,hit,hit,,
+132,132,llm,1,5♥ 2♥ J♣,17,3♣,stand,stand,lose,-1.0
+133,133,llm,0,7♠ A♣,18,A♦,none,none,lose,-1.0
+134,134,llm,0,2♠ Q♠,12,9♥,hit,hit,,
+134,134,llm,1,2♠ Q♠ A♥,13,9♥,hit,hit,,
+134,134,llm,2,2♠ Q♠ A♥ 2♦,15,9♥,hit,hit,,
+134,134,llm,3,2♠ Q♠ A♥ 2♦ 3♠,18,9♥,stand,stand,lose,-1.0
+135,135,llm,0,J♣ K♣,20,A♣,stand,stand,win,1.0
+136,136,llm,0,10♣ Q♥,20,K♥,stand,stand,win,1.0
+137,137,llm,0,K♣ 3♥,13,3♠,stand,stand,win,1.0
+138,138,llm,0,10♠ J♦,20,2♠,stand,stand,win,1.0
+139,139,llm,0,2♥ A♠,13,4♦,hit,hit,,
+139,139,llm,1,2♥ A♠ 5♥,18,4♦,hit,stand,,
+139,139,llm,2,2♥ A♠ 5♥ J♥,18,4♦,stand,stand,lose,-1.0
+140,140,llm,0,J♠ 8♣,18,4♦,stand,stand,push,0.0
+141,141,llm,0,6♥ K♣,16,4♦,stand,stand,win,1.0
+142,142,llm,0,A♣ 8♣,19,4♠,double,stand,lose,-2.0
+143,143,llm,0,5♠ 10♥,15,Q♦,surrender,surrender,surrender,-0.5
+144,144,llm,0,10♦ K♦,20,7♦,stand,stand,lose,-1.0
+145,145,llm,0,10♥ 2♥,12,9♥,hit,hit,,
+145,145,llm,1,10♥ 2♥ A♥,13,9♥,hit,hit,lose,-1.0
+146,146,llm,0,5♦ A♥,16,8♦,hit,hit,,
+146,146,llm,1,5♦ A♥ 5♣,21,8♦,stand,stand,win,1.0
+147,147,llm,0,Q♠ 8♠,18,K♦,stand,stand,win,1.0
+148,148,llm,0,K♠ A♠,21,8♦,none,none,blackjack,1.5
+149,149,llm,0,Q♣ K♦,20,K♠,stand,stand,push,0.0
+150,150,llm,0,K♥ 7♠,17,J♠,none,none,lose,-1.0
+151,151,llm,0,3♥ K♦,13,2♥,hit,stand,lose,-1.0
+152,152,llm,0,7♠ 2♠,9,J♦,hit,hit,,
+152,152,llm,1,7♠ 2♠ 7♠,16,J♦,hit,hit,lose,-1.0
+153,153,llm,0,6♠ 8♦,14,A♣,surrender,hit,surrender,-0.5
+154,154,llm,0,2♥ 4♠,6,Q♣,hit,hit,,
+154,154,llm,1,2♥ 4♠ 8♦,14,Q♣,hit,hit,,
+154,154,llm,2,2♥ 4♠ 8♦ 2♥,16,Q♣,hit,hit,,
+154,154,llm,3,2♥ 4♠ 8♦ 2♥ 4♥,20,Q♣,stand,stand,win,1.0
+155,155,llm,0,K♣ 5♦,15,Q♠,surrender,surrender,surrender,-0.5
+156,156,llm,0,4♠ J♦,14,7♥,hit,hit,,
+156,156,llm,1,4♠ J♦ A♦,15,7♥,hit,hit,lose,-1.0
+157,157,llm,0,6♠ 6♣,12,K♥,hit,hit,,
+157,157,llm,1,6♠ 6♣ 4♦,16,K♥,hit,hit,lose,-1.0
+158,158,llm,0,10♥ 6♣,16,2♥,hit,stand,,
+158,158,llm,1,10♥ 6♣ 4♣,20,2♥,stand,stand,lose,-1.0
+159,159,llm,0,8♠ 10♦,18,J♣,stand,stand,lose,-1.0
+160,160,llm,0,Q♥ 8♦,18,K♠,stand,stand,lose,-1.0
+161,161,llm,0,7♥ 10♦,17,2♥,stand,stand,lose,-1.0
+162,162,llm,0,3♣ J♠,13,2♥,stand,stand,lose,-1.0
+163,163,llm,0,6♦ 2♠,8,2♣,hit,hit,,
+163,163,llm,1,6♦ 2♠ 7♠,15,2♣,stand,stand,win,1.0
+164,164,llm,0,J♠ 2♣,12,K♠,hit,hit,,
+164,164,llm,1,J♠ 2♣ 5♠,17,K♠,stand,stand,lose,-1.0
+165,165,llm,0,10♥ A♥,21,7♣,none,none,blackjack,1.5
+166,166,llm,0,2♠ 2♥,4,J♠,hit,hit,,
+166,166,llm,1,2♠ 2♥ 8♥,12,J♠,hit,hit,lose,-1.0
+167,167,llm,0,2♦ A♥,13,7♠,hit,hit,,
+167,167,llm,1,2♦ A♥ J♥,13,7♠,hit,hit,,
+167,167,llm,2,2♦ A♥ J♥ 5♠,18,7♠,stand,stand,win,1.0
+168,168,llm,0,8♥ 9♣,17,6♥,stand,stand,push,0.0
+169,169,llm,0,2♣ K♣,12,8♥,hit,hit,,
+169,169,llm,1,2♣ K♣ 3♥,15,8♥,hit,hit,lose,-1.0
+170,170,llm,0,9♦ 9♥,18,3♠,split,split,,
+170,170,llm,1,9♦ 10♠,19,3♠,stand,stand,,
+170,170,llm,2,9♥ 9♦,18,3♠,stand,stand,"lose, lose",-2.0
+171,171,llm,0,3♣ 5♥,8,5♠,double,hit,lose,-2.0
+172,172,llm,0,K♦ 7♥,17,10♠,stand,stand,lose,-1.0
+173,173,llm,0,J♥ 2♥,12,4♠,stand,stand,lose,-1.0
+174,174,llm,0,4♥ A♥,15,7♦,hit,hit,,
+174,174,llm,1,4♥ A♥ 4♣,19,7♦,stand,stand,win,1.0
+175,175,llm,0,8♦ 2♣,10,5♦,double,double,win,2.0
+176,176,llm,0,4♦ Q♥,14,4♣,stand,stand,win,1.0
+177,177,llm,0,8♥ 9♥,17,10♠,none,none,lose,-1.0
+178,178,llm,0,7♥ 7♣,14,A♦,surrender,hit,surrender,-0.5
+179,179,llm,0,Q♠ 9♣,19,K♥,stand,stand,lose,-1.0
+180,180,llm,0,10♦ 7♥,17,3♠,stand,stand,lose,-1.0
+181,181,llm,0,K♣ 5♣,15,3♥,stand,stand,win,1.0
+182,182,llm,0,Q♦ 4♦,14,K♦,surrender,hit,surrender,-0.5
+183,183,llm,0,5♥ 2♥,7,9♠,hit,hit,,
+183,183,llm,1,5♥ 2♥ K♠,17,9♠,stand,stand,lose,-1.0
+184,184,llm,0,K♣ 8♦,18,5♥,stand,stand,push,0.0
+185,185,llm,0,7♥ 3♣,10,A♦,none,none,lose,-1.0
+186,186,llm,0,8♦ 9♦,17,6♥,stand,stand,lose,-1.0
+187,187,llm,0,Q♦ 6♠,16,J♣,surrender,surrender,surrender,-0.5
+188,188,llm,0,J♥ 3♥,13,7♣,hit,hit,lose,-1.0
+189,189,llm,0,2♠ 10♦,12,Q♣,hit,hit,lose,-1.0
+190,190,llm,0,A♣ 4♦,15,10♣,hit,hit,,
+190,190,llm,1,A♣ 4♦ 4♥,19,10♣,stand,stand,push,0.0
+191,191,llm,0,Q♥ 4♥,14,Q♦,hit,hit,lose,-1.0
+192,192,llm,0,J♣ 7♠,17,Q♠,stand,stand,lose,-1.0
+193,193,llm,0,3♣ Q♣,13,4♣,stand,stand,win,1.0
+194,194,llm,0,J♠ K♣,20,10♣,stand,stand,win,1.0
+195,195,llm,0,7♠ 10♦,17,9♠,stand,stand,lose,-1.0
+196,196,llm,0,A♠ 5♥,16,3♦,hit,hit,,
+196,196,llm,1,A♠ 5♥ 7♥,13,3♦,stand,stand,win,1.0
+197,197,llm,0,5♦ 4♦,9,9♥,hit,hit,,
+197,197,llm,1,5♦ 4♦ Q♥,19,9♥,stand,stand,win,1.0
+198,198,llm,0,3♣ A♣,14,9♣,hit,hit,,
+198,198,llm,1,3♣ A♣ Q♣,14,9♣,hit,hit,,
+198,198,llm,2,3♣ A♣ Q♣ A♦,15,9♣,hit,hit,,
+198,198,llm,3,3♣ A♣ Q♣ A♦ A♠,16,9♣,hit,hit,lose,-1.0
+199,199,llm,0,9♦ K♣,19,8♠,stand,stand,push,0.0
+200,200,llm,0,Q♦ 4♦,14,2♥,hit,stand,lose,-1.0
+201,201,llm,0,10♣ 9♥,19,Q♥,stand,stand,win,1.0
+202,202,llm,0,4♠ 3♥,7,8♣,hit,hit,,
+202,202,llm,1,4♠ 3♥ J♠,17,8♣,stand,stand,lose,-1.0
+203,203,llm,0,9♠ 6♠,15,10♦,surrender,surrender,surrender,-0.5
+204,204,llm,0,10♠ A♣,21,6♠,none,none,blackjack,1.5
+205,205,llm,0,3♦ K♠,13,A♣,hit,hit,lose,-1.0
+206,206,llm,0,6♥ 2♥,8,3♠,hit,hit,,
+206,206,llm,1,6♥ 2♥ 2♦,10,3♠,hit,hit,,
+206,206,llm,2,6♥ 2♥ 2♦ 10♥,20,3♠,stand,stand,win,1.0
+207,207,llm,0,A♠ J♥,21,K♠,none,none,blackjack,1.5
+208,208,llm,0,A♣ J♠,21,J♥,none,none,blackjack,1.5
+209,209,llm,0,A♦ 10♣,21,K♥,none,none,blackjack,1.5
+210,210,llm,0,3♠ A♠,14,5♥,double,double,win,2.0
+211,211,llm,0,5♣ 8♦,13,2♣,hit,stand,,
+211,211,llm,1,5♣ 8♦ 6♥,19,2♣,stand,stand,lose,-1.0
+212,212,llm,0,9♠ A♣,20,10♦,stand,stand,win,1.0
+213,213,llm,0,A♦ 10♥,21,2♥,none,none,blackjack,1.5
+214,214,llm,0,6♥ 6♥,12,A♦,none,none,lose,-1.0
+215,215,llm,0,J♦ K♠,20,A♥,stand,stand,win,1.0
+216,216,llm,0,4♥ A♣,15,5♠,double,double,win,2.0
+217,217,llm,0,5♠ 5♠,10,5♦,double,double,win,2.0
+218,218,llm,0,Q♠ 5♥,15,6♠,stand,stand,win,1.0
+219,219,llm,0,7♦ 9♦,16,Q♥,none,none,lose,-1.0
+220,220,llm,0,4♦ K♦,14,Q♦,hit,hit,lose,-1.0
+221,221,llm,0,10♦ 10♠,20,J♥,stand,stand,win,1.0
+222,222,llm,0,5♥ 4♠,9,5♦,double,double,lose,-2.0
+223,223,llm,0,3♦ 6♦,9,3♣,double,double,lose,-2.0
+224,224,llm,0,8♣ 5♣,13,8♠,hit,hit,,
+224,224,llm,1,8♣ 5♣ 3♦,16,8♠,hit,hit,,
+224,224,llm,2,8♣ 5♣ 3♦ A♥,17,8♠,stand,stand,lose,-1.0
+225,225,llm,0,7♦ 6♦,13,2♠,hit,stand,,
+225,225,llm,1,7♦ 6♦ 8♣,21,2♠,stand,stand,win,1.0
+226,226,llm,0,2♠ 10♦,12,5♦,stand,stand,lose,-1.0
+227,227,llm,0,J♠ 4♠,14,9♣,hit,hit,lose,-1.0
+228,228,llm,0,10♥ K♥,20,9♣,stand,stand,push,0.0
+229,229,llm,0,Q♥ K♥,20,8♦,stand,stand,win,1.0
+230,230,llm,0,6♣ 3♦,9,K♠,hit,hit,,
+230,230,llm,1,6♣ 3♦ 3♦,12,K♠,hit,hit,,
+230,230,llm,2,6♣ 3♦ 3♦ 2♦,14,K♠,hit,hit,,
+230,230,llm,3,6♣ 3♦ 3♦ 2♦ 4♠,18,K♠,stand,stand,lose,-1.0
+231,231,llm,0,K♥ A♣,21,A♥,none,none,blackjack,1.5
+232,232,llm,0,2♠ 4♦,6,K♥,hit,hit,,
+232,232,llm,1,2♠ 4♦ K♣,16,K♥,hit,hit,lose,-1.0
+233,233,llm,0,K♣ 3♦,13,10♥,hit,hit,lose,-1.0
+234,234,llm,0,8♦ 5♣,13,7♣,hit,hit,,
+234,234,llm,1,8♦ 5♣ 4♥,17,7♣,stand,stand,push,0.0
+235,235,llm,0,10♦ 8♦,18,5♥,stand,stand,win,1.0
+236,236,llm,0,9♣ K♦,19,8♠,stand,stand,win,1.0
+237,237,llm,0,8♠ 6♦,14,10♣,hit,hit,,
+237,237,llm,1,8♠ 6♦ 7♣,21,10♣,stand,stand,win,1.0
+238,238,llm,0,10♣ 3♦,13,9♠,hit,hit,,
+238,238,llm,1,10♣ 3♦ 8♠,21,9♠,stand,stand,win,1.0
+239,239,llm,0,10♥ K♦,20,9♠,stand,stand,win,1.0
+240,240,llm,0,6♣ 7♥,13,7♦,hit,hit,lose,-1.0
+241,241,llm,0,2♦ A♦,13,3♥,hit,hit,,
+241,241,llm,1,2♦ A♦ 5♦,18,3♥,stand,stand,lose,-1.0
+242,242,llm,0,4♦ 9♠,13,3♦,stand,stand,lose,-1.0
+243,243,llm,0,J♥ J♥,20,6♥,stand,stand,win,1.0
+244,244,llm,0,3♥ Q♣,13,3♠,hit,stand,lose,-1.0
+245,245,llm,0,A♥ 9♣,20,6♠,stand,stand,win,1.0
+246,246,llm,0,6♣ 5♠,11,6♥,double,double,win,2.0
+247,247,llm,0,2♣ Q♥,12,6♦,stand,stand,win,1.0
+248,248,llm,0,6♥ K♠,16,Q♣,surrender,surrender,surrender,-0.5
+249,249,llm,0,10♣ Q♠,20,A♣,stand,stand,push,0.0
+250,250,llm,0,5♠ 4♣,9,Q♠,hit,hit,,
+250,250,llm,1,5♠ 4♣ 10♣,19,Q♠,stand,stand,win,1.0
+251,251,llm,0,8♦ J♣,18,2♠,stand,stand,lose,-1.0
+252,252,llm,0,10♥ 5♦,15,8♠,hit,hit,lose,-1.0
+253,253,llm,0,4♦ 2♠,6,A♥,hit,hit,,
+253,253,llm,1,4♦ 2♠ J♦,16,A♥,hit,hit,,
+253,253,llm,2,4♦ 2♠ J♦ A♥,17,A♥,stand,stand,lose,-1.0
+254,254,llm,0,J♣ K♦,20,J♠,stand,stand,push,0.0
+255,255,llm,0,4♣ 2♠,6,Q♥,hit,hit,,
+255,255,llm,1,4♣ 2♠ 10♣,16,Q♥,hit,hit,,
+255,255,llm,2,4♣ 2♠ 10♣ A♥,17,Q♥,stand,stand,lose,-1.0
+256,256,llm,0,5♠ 2♦,7,4♥,hit,hit,,
+256,256,llm,1,5♠ 2♦ Q♣,17,4♥,stand,stand,lose,-1.0
+257,257,llm,0,8♥ A♠,19,4♥,stand,stand,win,1.0
+258,258,llm,0,K♣ A♥,21,3♣,none,none,blackjack,1.5
+259,259,llm,0,9♦ 9♠,18,10♦,stand,stand,lose,-1.0
+260,260,llm,0,5♥ 2♥,7,Q♣,hit,hit,,
+260,260,llm,1,5♥ 2♥ 3♠,10,Q♣,hit,hit,,
+260,260,llm,2,5♥ 2♥ 3♠ A♣,21,Q♣,stand,stand,win,1.0
+261,261,llm,0,2♦ K♣,12,4♦,stand,stand,lose,-1.0
+262,262,llm,0,6♥ 3♥,9,2♦,hit,hit,,
+262,262,llm,1,6♥ 3♥ 8♦,17,2♦,stand,stand,push,0.0
+263,263,llm,0,Q♥ Q♠,20,6♦,stand,stand,win,1.0
+264,264,llm,0,8♠ 9♠,17,8♦,stand,stand,win,1.0
+265,265,llm,0,7♠ 6♥,13,Q♣,hit,hit,lose,-1.0
+266,266,llm,0,J♣ A♠,21,6♦,none,none,blackjack,1.5
+267,267,llm,0,Q♠ 8♦,18,K♥,stand,stand,push,0.0
+268,268,llm,0,2♦ 8♥,10,3♣,double,double,win,2.0
+269,269,llm,0,9♦ 9♣,18,2♦,split,split,,
+269,269,llm,1,9♦ 7♠,16,2♦,hit,stand,,
+269,269,llm,2,9♦ 7♠ 5♠,21,2♦,stand,stand,,
+269,269,llm,3,9♣ 5♦,14,2♦,stand,stand,"win, lose",0.0
+270,270,llm,0,2♠ 3♠,5,3♣,hit,hit,,
+270,270,llm,1,2♠ 3♠ Q♠,15,3♣,stand,stand,lose,-1.0
+271,271,llm,0,2♠ 6♦,8,2♣,hit,hit,,
+271,271,llm,1,2♠ 6♦ 10♣,18,2♣,stand,stand,win,1.0
+272,272,llm,0,Q♣ 8♣,18,3♣,stand,stand,lose,-1.0
+273,273,llm,0,9♠ 7♦,16,6♠,stand,stand,lose,-1.0
+274,274,llm,0,10♦ 9♣,19,2♣,stand,stand,lose,-1.0
+275,275,llm,0,K♥ 10♣,20,8♣,stand,stand,win,1.0
+276,276,llm,0,10♣ Q♠,20,J♣,stand,stand,win,1.0
+277,277,llm,0,8♠ 9♥,17,6♠,stand,stand,win,1.0
+278,278,llm,0,9♠ A♣,20,9♠,stand,stand,win,1.0
+279,279,llm,0,4♥ 2♣,6,A♦,hit,hit,,
+279,279,llm,1,4♥ 2♣ 6♠,12,A♦,hit,hit,,
+279,279,llm,2,4♥ 2♣ 6♠ 5♠,17,A♦,stand,stand,lose,-1.0
+280,280,llm,0,4♥ 5♠,9,10♦,hit,hit,,
+280,280,llm,1,4♥ 5♠ Q♦,19,10♦,stand,stand,win,1.0
+281,281,llm,0,Q♥ A♦,21,2♥,none,none,blackjack,1.5
+282,282,llm,0,9♦ K♣,19,K♣,stand,stand,win,1.0
+283,283,llm,0,Q♥ Q♥,20,6♦,stand,stand,win,1.0
+284,284,llm,0,5♦ 9♣,14,A♣,hit,hit,lose,-1.0
+285,285,llm,0,K♣ 5♠,15,3♠,stand,stand,win,1.0
+286,286,llm,0,6♠ 8♥,14,K♣,hit,hit,,
+286,286,llm,1,6♠ 8♥ 3♠,17,K♣,stand,stand,lose,-1.0
+287,287,llm,0,K♦ 6♥,16,A♥,surrender,surrender,surrender,-0.5
+288,288,llm,0,3♠ K♣,13,7♠,hit,hit,lose,-1.0
+289,289,llm,0,J♣ 5♠,15,6♠,stand,stand,lose,-1.0
+290,290,llm,0,6♦ 6♠,12,6♦,split,split,,
+290,290,llm,1,6♦ 5♥,11,6♦,double,double,,
+290,290,llm,2,6♠ 4♦,10,6♦,double,double,"win, win",4.0
+291,291,llm,0,10♣ 9♠,19,Q♠,stand,stand,win,1.0
+292,292,llm,0,J♦ K♦,20,8♠,stand,stand,win,1.0
+293,293,llm,0,Q♣ 8♥,18,8♣,stand,stand,lose,-1.0
+294,294,llm,0,A♣ 2♠,13,6♦,double,double,lose,-2.0
+295,295,llm,0,3♠ 8♥,11,8♣,double,double,win,2.0
+296,296,llm,0,K♣ 10♣,20,A♦,none,none,lose,-1.0
+297,297,llm,0,J♥ K♠,20,8♣,stand,stand,win,1.0
+298,298,llm,0,3♥ Q♥,13,Q♦,hit,hit,,
+298,298,llm,1,3♥ Q♥ 2♠,15,Q♦,hit,hit,lose,-1.0
+299,299,llm,0,6♣ 7♠,13,5♠,stand,stand,win,1.0
+300,300,llm,0,9♠ 9♦,18,2♣,split,split,,
+300,300,llm,1,9♠ 6♠,15,2♣,stand,stand,,
+300,300,llm,2,9♦ 10♦,19,2♣,stand,stand,"win, win",2.0
+301,301,llm,0,J♠ 6♦,16,7♠,hit,hit,,
+301,301,llm,1,J♠ 6♦ 5♦,21,7♠,stand,stand,win,1.0
+302,302,llm,0,A♦ Q♦,21,4♦,none,none,blackjack,1.5
+303,303,llm,0,5♦ 10♠,15,7♦,hit,hit,,
+303,303,llm,1,5♦ 10♠ 5♣,20,7♦,stand,stand,win,1.0
+304,304,llm,0,5♦ Q♥,15,4♥,stand,stand,win,1.0
+305,305,llm,0,4♠ 6♣,10,10♣,hit,hit,,
+305,305,llm,1,4♠ 6♣ 4♠,14,10♣,stand,hit,lose,-1.0
+306,306,llm,0,A♥ 8♠,19,10♥,none,none,lose,-1.0
+307,307,llm,0,3♥ 10♠,13,Q♠,hit,hit,,
+307,307,llm,1,3♥ 10♠ A♣,14,Q♠,hit,hit,lose,-1.0
+308,308,llm,0,6♠ J♠,16,Q♦,none,none,lose,-1.0
+309,309,llm,0,8♣ 2♥,10,J♠,hit,hit,,
+309,309,llm,1,8♣ 2♥ Q♠,20,J♠,stand,stand,win,1.0
+310,310,llm,0,J♦ 7♠,17,10♣,stand,stand,win,1.0
+311,311,llm,0,7♣ Q♣,17,3♣,stand,stand,push,0.0
+312,312,llm,0,J♦ 5♦,15,2♠,stand,stand,win,1.0
+313,313,llm,0,5♣ Q♥,15,7♣,hit,hit,lose,-1.0
+314,314,llm,0,J♠ 7♥,17,A♦,none,none,lose,-1.0
+315,315,llm,0,3♥ 4♦,7,5♥,hit,hit,,
+315,315,llm,1,3♥ 4♦ J♣,17,5♥,stand,stand,push,0.0
+316,316,llm,0,2♦ 9♥,11,8♥,double,double,win,2.0
+317,317,llm,0,4♣ 4♠,8,Q♥,hit,hit,,
+317,317,llm,1,4♣ 4♠ K♠,18,Q♥,stand,stand,lose,-1.0
+318,318,llm,0,K♦ Q♠,20,K♦,stand,stand,win,1.0
+319,319,llm,0,2♠ 4♦,6,9♦,hit,hit,,
+319,319,llm,1,2♠ 4♦ J♠,16,9♦,hit,hit,lose,-1.0
+320,320,llm,0,9♦ 8♠,17,3♥,stand,stand,win,1.0
+321,321,llm,0,K♣ A♥,21,7♠,none,none,blackjack,1.5
+322,322,llm,0,8♥ 8♣,16,3♣,split,split,,
+322,322,llm,1,8♥ 3♠,11,3♣,double,double,,
+322,322,llm,2,8♣ 9♥,17,3♣,stand,stand,"lose, lose",-3.0
+323,323,llm,0,7♥ 3♥,10,6♦,double,double,push,0.0
+324,324,llm,0,5♠ 9♣,14,10♣,hit,hit,,
+324,324,llm,1,5♠ 9♣ 2♦,16,10♣,stand,hit,lose,-1.0
+325,325,llm,0,10♦ 4♣,14,A♥,none,none,lose,-1.0
+326,326,llm,0,3♥ 4♥,7,10♣,hit,hit,,
+326,326,llm,1,3♥ 4♥ 6♣,13,10♣,hit,hit,,
+326,326,llm,2,3♥ 4♥ 6♣ A♠,14,10♣,hit,hit,,
+326,326,llm,3,3♥ 4♥ 6♣ A♠ A♣,15,10♣,hit,hit,lose,-1.0
+327,327,llm,0,6♣ 8♦,14,6♥,stand,stand,lose,-1.0
+328,328,llm,0,Q♠ 6♣,16,K♥,none,none,lose,-1.0
+329,329,llm,0,J♣ 3♥,13,4♥,stand,stand,lose,-1.0
+330,330,llm,0,Q♣ Q♠,20,A♦,stand,stand,win,1.0
+331,331,llm,0,10♥ J♦,20,J♣,stand,stand,win,1.0
+332,332,llm,0,Q♦ Q♥,20,8♥,stand,stand,win,1.0
+333,333,llm,0,K♦ K♦,20,Q♦,stand,stand,win,1.0
+334,334,llm,0,J♦ 2♠,12,K♦,hit,hit,,
+334,334,llm,1,J♦ 2♠ 5♦,17,K♦,stand,stand,lose,-1.0
+335,335,llm,0,J♦ J♦,20,2♥,stand,stand,push,0.0
+336,336,llm,0,5♥ 10♠,15,2♦,hit,stand,,
+336,336,llm,1,5♥ 10♠ 6♦,21,2♦,stand,stand,win,1.0
+337,337,llm,0,A♠ 8♥,19,10♠,stand,stand,win,1.0
+338,338,llm,0,6♥ 2♠,8,5♥,hit,hit,,
+338,338,llm,1,6♥ 2♠ 8♠,16,5♥,stand,stand,win,1.0
+339,339,llm,0,9♦ J♦,19,A♥,stand,stand,win,1.0
+340,340,llm,0,J♠ J♠,20,10♣,stand,stand,push,0.0
+341,341,llm,0,A♣ 6♣,17,J♠,hit,hit,,
+341,341,llm,1,A♣ 6♣ 6♣,13,J♠,hit,hit,,
+341,341,llm,2,A♣ 6♣ 6♣ 7♦,20,J♠,stand,stand,push,0.0
+342,342,llm,0,J♥ A♣,21,5♥,none,none,blackjack,1.5
+343,343,llm,0,7♠ 5♣,12,10♠,hit,hit,,
+343,343,llm,1,7♠ 5♣ 8♣,20,10♠,stand,stand,push,0.0
+344,344,llm,0,Q♣ 2♥,12,3♠,hit,hit,lose,-1.0
+345,345,llm,0,4♠ 8♣,12,4♥,stand,stand,win,1.0
+346,346,llm,0,2♣ 7♥,9,9♠,hit,hit,,
+346,346,llm,1,2♣ 7♥ A♦,20,9♠,stand,stand,win,1.0
+347,347,llm,0,Q♦ 8♣,18,9♠,stand,stand,lose,-1.0
+348,348,llm,0,9♥ 6♥,15,4♠,stand,stand,lose,-1.0
+349,349,llm,0,3♥ K♥,13,Q♠,hit,hit,,
+349,349,llm,1,3♥ K♥ 7♠,20,Q♠,stand,stand,win,1.0
+350,350,llm,0,5♣ Q♠,15,3♠,stand,stand,lose,-1.0
+351,351,llm,0,10♣ 10♥,20,10♦,stand,stand,push,0.0
+352,352,llm,0,4♠ 8♣,12,10♦,hit,hit,,
+352,352,llm,1,4♠ 8♣ 8♦,20,10♦,stand,stand,push,0.0
+353,353,llm,0,Q♠ K♣,20,8♠,stand,stand,win,1.0
+354,354,llm,0,7♥ 7♠,14,Q♠,hit,hit,,
+354,354,llm,1,7♥ 7♠ A♦,15,Q♠,hit,hit,,
+354,354,llm,2,7♥ 7♠ A♦ 2♥,17,Q♠,stand,stand,lose,-1.0
+355,355,llm,0,5♣ A♣,16,6♥,double,double,lose,-2.0
+356,356,llm,0,10♦ 2♣,12,9♣,hit,hit,,
+356,356,llm,1,10♦ 2♣ 4♦,16,9♣,hit,hit,lose,-1.0
+357,357,llm,0,5♠ 8♣,13,J♣,hit,hit,,
+357,357,llm,1,5♠ 8♣ 8♦,21,J♣,stand,stand,win,1.0
+358,358,llm,0,7♦ 7♠,14,4♥,split,split,,
+358,358,llm,1,7♦ 7♠,14,4♥,stand,stand,,
+358,358,llm,2,7♠ 10♥,17,4♥,stand,stand,"lose, lose",-2.0
+359,359,llm,0,10♠ K♠,20,K♠,none,none,lose,-1.0
+360,360,llm,0,3♦ 9♦,12,2♥,hit,hit,,
+360,360,llm,1,3♦ 9♦ 4♥,16,2♥,stand,stand,lose,-1.0
+361,361,llm,0,3♦ K♠,13,J♠,hit,hit,lose,-1.0
+362,362,llm,0,10♥ 6♣,16,8♥,hit,hit,,
+362,362,llm,1,10♥ 6♣ A♠,17,8♥,stand,stand,push,0.0
+363,363,llm,0,J♣ 3♦,13,7♦,hit,hit,lose,-1.0
+364,364,llm,0,3♥ 9♠,12,10♠,hit,hit,,
+364,364,llm,1,3♥ 9♠ 2♦,14,10♠,hit,hit,,
+364,364,llm,2,3♥ 9♠ 2♦ 2♠,16,10♠,hit,hit,,
+364,364,llm,3,3♥ 9♠ 2♦ 2♠ 4♦,20,10♠,stand,stand,win,1.0
+365,365,llm,0,3♠ 5♠,8,K♦,hit,hit,,
+365,365,llm,1,3♠ 5♠ 2♥,10,K♦,hit,hit,,
+365,365,llm,2,3♠ 5♠ 2♥ 5♠,15,K♦,hit,hit,lose,-1.0
+366,366,llm,0,J♣ J♥,20,4♠,stand,stand,win,1.0
+367,367,llm,0,6♦ 4♠,10,K♥,hit,hit,,
+367,367,llm,1,6♦ 4♠ 9♦,19,K♥,stand,stand,lose,-1.0
+368,368,llm,0,Q♣ 2♣,12,K♣,hit,hit,lose,-1.0
+369,369,llm,0,7♣ 7♦,14,5♥,split,split,,
+369,369,llm,1,7♣ 9♥,16,5♥,stand,stand,,
+369,369,llm,2,7♦ A♥,18,5♥,double,double,"lose, lose",-3.0
+370,370,llm,0,K♥ 5♠,15,6♠,stand,stand,lose,-1.0
+371,371,llm,0,5♥ 6♥,11,9♠,double,double,push,0.0
+372,372,llm,0,10♥ 9♦,19,8♣,stand,stand,win,1.0
+373,373,llm,0,6♦ J♥,16,9♥,surrender,surrender,surrender,-0.5
+374,374,llm,0,2♦ K♠,12,3♣,hit,hit,,
+374,374,llm,1,2♦ K♠ 9♦,21,3♣,stand,stand,win,1.0
+375,375,llm,0,4♦ Q♦,14,6♣,stand,stand,lose,-1.0
+376,376,llm,0,A♠ 7♠,18,9♣,hit,hit,,
+376,376,llm,1,A♠ 7♠ 8♥,16,9♣,hit,hit,,
+376,376,llm,2,A♠ 7♠ 8♥ A♠,17,9♣,stand,stand,win,1.0
+377,377,llm,0,8♦ J♠,18,Q♠,stand,stand,lose,-1.0
+378,378,llm,0,K♥ A♠,21,7♠,none,none,blackjack,1.5
+379,379,llm,0,4♦ 4♦,8,J♠,hit,hit,,
+379,379,llm,1,4♦ 4♦ A♥,19,J♠,stand,stand,win,1.0
+380,380,llm,0,4♦ 5♣,9,A♥,hit,hit,,
+380,380,llm,1,4♦ 5♣ 9♦,18,A♥,stand,stand,push,0.0
+381,381,llm,0,K♣ J♣,20,9♣,stand,stand,win,1.0
+382,382,llm,0,5♣ 7♦,12,7♣,hit,hit,lose,-1.0
+383,383,llm,0,6♥ K♠,16,K♥,surrender,surrender,surrender,-0.5
+384,384,llm,0,3♠ A♥,14,K♦,none,none,lose,-1.0
+385,385,llm,0,9♣ 9♠,18,9♠,split,split,,
+385,385,llm,1,9♣ 3♥,12,9♠,hit,hit,,
+385,385,llm,2,9♣ 3♥ A♣,13,9♠,hit,hit,,
+385,385,llm,3,9♣ 3♥ A♣ 2♥,15,9♠,hit,hit,,
+385,385,llm,4,9♠ 10♥,19,9♠,stand,stand,"lose, win",0.0
+386,386,llm,0,J♠ 3♦,13,K♠,hit,hit,,
+386,386,llm,1,J♠ 3♦ 7♥,20,K♠,stand,stand,win,1.0
+387,387,llm,0,6♦ 9♦,15,2♥,stand,stand,win,1.0
+388,388,llm,0,8♣ 6♣,14,10♦,hit,hit,,
+388,388,llm,1,8♣ 6♣ 5♠,19,10♦,stand,stand,lose,-1.0
+389,389,llm,0,K♦ 6♥,16,10♣,surrender,surrender,surrender,-0.5
+390,390,llm,0,6♣ 8♠,14,2♠,stand,stand,win,1.0
+391,391,llm,0,7♠ 8♦,15,10♣,surrender,surrender,surrender,-0.5
+392,392,llm,0,K♦ 2♥,12,3♣,hit,hit,,
+392,392,llm,1,K♦ 2♥ 6♥,18,3♣,stand,stand,win,1.0
+393,393,llm,0,J♣ 10♣,20,7♥,stand,stand,win,1.0
+394,394,llm,0,7♦ Q♦,17,J♦,stand,stand,lose,-1.0
+395,395,llm,0,9♣ Q♥,19,5♦,stand,stand,win,1.0
+396,396,llm,0,A♦ 5♣,16,2♠,hit,hit,,
+396,396,llm,1,A♦ 5♣ 10♦,16,2♠,stand,stand,lose,-1.0
+397,397,llm,0,J♥ 9♠,19,9♠,stand,stand,win,1.0
+398,398,llm,0,A♠ 5♦,16,K♥,hit,hit,,
+398,398,llm,1,A♠ 5♦ 10♣,16,K♥,hit,hit,,
+398,398,llm,2,A♠ 5♦ 10♣ 3♣,19,K♥,stand,stand,lose,-1.0
+399,399,llm,0,7♦ 10♥,17,4♣,stand,stand,lose,-1.0
+400,400,llm,0,3♥ A♦,14,3♣,hit,hit,,
+400,400,llm,1,3♥ A♦ 5♣,19,3♣,stand,stand,win,1.0
+401,401,llm,0,9♠ Q♥,19,A♠,stand,stand,lose,-1.0
+402,402,llm,0,5♠ 7♥,12,Q♠,none,none,lose,-1.0
+403,403,llm,0,Q♦ 7♦,17,8♦,stand,stand,win,1.0
+404,404,llm,0,7♠ 3♥,10,A♠,hit,hit,,
+404,404,llm,1,7♠ 3♥ 10♠,20,A♠,stand,stand,win,1.0
+405,405,llm,0,J♦ 3♣,13,5♠,stand,stand,win,1.0
+406,406,llm,0,9♥ 9♠,18,7♥,stand,stand,win,1.0
+407,407,llm,0,3♥ 6♦,9,5♠,double,double,lose,-2.0
+408,408,llm,0,6♦ A♦,17,7♣,hit,hit,,
+408,408,llm,1,6♦ A♦ K♣,17,7♣,stand,stand,lose,-1.0
+409,409,llm,0,6♥ K♣,16,9♦,surrender,surrender,surrender,-0.5
+410,410,llm,0,Q♦ J♥,20,5♥,stand,stand,win,1.0
+411,411,llm,0,8♥ K♥,18,2♦,stand,stand,win,1.0
+412,412,llm,0,6♠ 4♥,10,5♣,double,double,win,2.0
+413,413,llm,0,7♣ 4♠,11,4♠,double,double,win,2.0
+414,414,llm,0,10♥ 4♦,14,J♦,hit,hit,lose,-1.0
+415,415,llm,0,6♦ A♣,17,J♦,hit,hit,,
+415,415,llm,1,6♦ A♣ 9♥,16,J♦,hit,hit,,
+415,415,llm,2,6♦ A♣ 9♥ 2♣,18,J♦,stand,stand,lose,-1.0
+416,416,llm,0,A♦ J♠,21,5♥,none,none,blackjack,1.5
+417,417,llm,0,8♠ 9♦,17,3♠,stand,stand,win,1.0
+418,418,llm,0,J♥ 7♥,17,A♦,none,none,lose,-1.0
+419,419,llm,0,A♥ 3♠,14,3♦,hit,hit,,
+419,419,llm,1,A♥ 3♠ 6♥,20,3♦,stand,stand,lose,-1.0
+420,420,llm,0,2♦ J♣,12,6♣,stand,stand,win,1.0
+421,421,llm,0,2♣ 5♠,7,7♠,hit,hit,,
+421,421,llm,1,2♣ 5♠ Q♥,17,7♠,stand,stand,lose,-1.0
+422,422,llm,0,4♠ 5♥,9,8♠,hit,hit,,
+422,422,llm,1,4♠ 5♥ Q♠,19,8♠,stand,stand,win,1.0
+423,423,llm,0,J♥ 5♦,15,7♣,hit,hit,,
+423,423,llm,1,J♥ 5♦ 5♥,20,7♣,stand,stand,win,1.0
+424,424,llm,0,3♣ 8♦,11,5♣,double,double,lose,-2.0
+425,425,llm,0,8♥ J♣,18,8♠,stand,stand,push,0.0
+426,426,llm,0,7♣ Q♦,17,3♦,stand,stand,lose,-1.0
+427,427,llm,0,7♣ 4♣,11,4♠,double,double,win,2.0
+428,428,llm,0,2♣ K♥,12,2♣,hit,hit,lose,-1.0
+429,429,llm,0,7♠ Q♥,17,Q♥,stand,stand,lose,-1.0
+430,430,llm,0,J♣ 4♦,14,7♦,hit,hit,,
+430,430,llm,1,J♣ 4♦ 7♥,21,7♦,stand,stand,push,0.0
+431,431,llm,0,8♠ 6♦,14,A♥,hit,hit,lose,-1.0
+432,432,llm,0,A♣ 8♣,19,4♠,stand,stand,win,1.0
+433,433,llm,0,Q♠ A♣,21,9♠,none,none,blackjack,1.5
+434,434,llm,0,5♣ 8♥,13,J♣,hit,hit,,
+434,434,llm,1,5♣ 8♥ 6♠,19,J♣,stand,stand,lose,-1.0
+435,435,llm,0,9♠ 4♠,13,6♥,stand,stand,lose,-1.0
+436,436,llm,0,2♠ 10♠,12,A♣,hit,hit,,
+436,436,llm,1,2♠ 10♠ 2♠,14,A♣,hit,hit,lose,-1.0
+437,437,llm,0,K♥ K♠,20,4♠,stand,stand,win,1.0
+438,438,llm,0,4♥ 10♣,14,A♦,none,none,lose,-1.0
+439,439,llm,0,K♠ 5♥,15,A♥,hit,hit,lose,-1.0
+440,440,llm,0,K♥ K♠,20,5♠,stand,stand,win,1.0
+441,441,llm,0,2♠ 2♣,4,Q♠,hit,hit,,
+441,441,llm,1,2♠ 2♣ 9♥,13,Q♠,hit,hit,lose,-1.0
+442,442,llm,0,7♣ J♦,17,8♦,stand,stand,lose,-1.0
+443,443,llm,0,A♥ 8♣,19,Q♥,stand,stand,lose,-1.0
+444,444,llm,0,4♥ 8♥,12,6♠,stand,stand,lose,-1.0
+445,445,llm,0,J♦ Q♦,20,10♥,stand,stand,lose,-1.0
+446,446,llm,0,Q♣ 8♥,18,6♦,stand,stand,lose,-1.0
+447,447,llm,0,4♥ 9♥,13,10♥,hit,hit,lose,-1.0
+448,448,llm,0,2♠ 10♥,12,Q♦,hit,hit,,
+448,448,llm,1,2♠ 10♥ 4♣,16,Q♦,hit,hit,,
+448,448,llm,2,2♠ 10♥ 4♣ 2♥,18,Q♦,stand,stand,lose,-1.0
+449,449,llm,0,8♠ A♠,19,5♥,double,stand,push,0.0
+450,450,llm,0,Q♠ J♦,20,7♠,stand,stand,lose,-1.0
+451,451,llm,0,9♦ 2♦,11,6♠,double,double,win,2.0
+452,452,llm,0,7♦ 2♥,9,10♣,none,none,lose,-1.0
+453,453,llm,0,6♦ 2♦,8,J♠,hit,hit,,
+453,453,llm,1,6♦ 2♦ 4♠,12,J♠,hit,hit,lose,-1.0
+454,454,llm,0,A♠ 4♦,15,3♠,hit,hit,,
+454,454,llm,1,A♠ 4♦ Q♥,15,3♠,stand,stand,lose,-1.0
+455,455,llm,0,A♥ 4♣,15,2♠,hit,hit,,
+455,455,llm,1,A♥ 4♣ 3♠,18,2♠,stand,stand,lose,-1.0
+456,456,llm,0,J♦ 3♦,13,6♣,stand,stand,lose,-1.0
+457,457,llm,0,4♠ J♦,14,8♦,hit,hit,,
+457,457,llm,1,4♠ J♦ 3♣,17,8♦,stand,stand,push,0.0
+458,458,llm,0,Q♣ K♥,20,K♠,stand,stand,win,1.0
+459,459,llm,0,K♦ 10♥,20,J♠,stand,stand,push,0.0
+460,460,llm,0,J♠ 10♥,20,A♣,none,none,lose,-1.0
+461,461,llm,0,6♥ 4♣,10,10♣,hit,hit,,
+461,461,llm,1,6♥ 4♣ 3♠,13,10♣,hit,hit,,
+461,461,llm,2,6♥ 4♣ 3♠ 8♥,21,10♣,stand,stand,win,1.0
+462,462,llm,0,6♠ 4♠,10,A♣,hit,hit,,
+462,462,llm,1,6♠ 4♠ 2♦,12,A♣,hit,hit,lose,-1.0
+463,463,llm,0,2♥ Q♦,12,9♣,hit,hit,,
+463,463,llm,1,2♥ Q♦ 7♥,19,9♣,stand,stand,win,1.0
+464,464,llm,0,J♣ 9♦,19,8♣,stand,stand,win,1.0
+465,465,llm,0,9♠ 7♣,16,J♥,surrender,surrender,surrender,-0.5
+466,466,llm,0,3♣ 8♠,11,Q♥,double,double,win,2.0
+467,467,llm,0,A♦ K♠,21,K♣,none,none,blackjack,1.5
+468,468,llm,0,2♥ 5♣,7,A♣,hit,hit,,
+468,468,llm,1,2♥ 5♣ 10♠,17,A♣,stand,stand,lose,-1.0
+469,469,llm,0,7♣ 2♣,9,J♠,hit,hit,,
+469,469,llm,1,7♣ 2♣ A♣,20,J♠,stand,stand,win,1.0
+470,470,llm,0,10♦ 4♠,14,10♦,hit,hit,,
+470,470,llm,1,10♦ 4♠ 6♥,20,10♦,stand,stand,win,1.0
+471,471,llm,0,10♣ 5♣,15,J♠,surrender,surrender,surrender,-0.5
+472,472,llm,0,3♣ K♦,13,J♠,hit,hit,lose,-1.0
+473,473,llm,0,5♦ 3♣,8,8♦,hit,hit,,
+473,473,llm,1,5♦ 3♣ 10♣,18,8♦,stand,stand,lose,-1.0
+474,474,llm,0,J♣ 2♥,12,A♦,hit,hit,lose,-1.0
+475,475,llm,0,9♣ 3♣,12,2♥,hit,hit,lose,-1.0
+476,476,llm,0,9♠ K♣,19,6♠,stand,stand,win,1.0
+477,477,llm,0,6♥ A♠,17,3♣,hit,double,,
+477,477,llm,1,6♥ A♠ 3♣,20,3♣,stand,stand,win,1.0
+478,478,llm,0,K♥ 8♥,18,A♦,stand,stand,lose,-1.0
+479,479,llm,0,6♥ Q♥,16,7♦,hit,hit,lose,-1.0
+480,480,llm,0,8♠ 7♠,15,6♣,stand,stand,lose,-1.0
+481,481,llm,0,10♣ 8♦,18,J♥,stand,stand,win,1.0
+482,482,llm,0,8♥ Q♠,18,7♠,stand,stand,win,1.0
+483,483,llm,0,K♥ 7♥,17,J♣,stand,stand,push,0.0
+484,484,llm,0,8♣ 7♦,15,4♣,stand,stand,win,1.0
+485,485,llm,0,8♦ 4♣,12,Q♦,hit,hit,,
+485,485,llm,1,8♦ 4♣ 7♦,19,Q♦,stand,stand,win,1.0
+486,486,llm,0,Q♣ 5♠,15,K♣,surrender,surrender,surrender,-0.5
+487,487,llm,0,J♠ 7♥,17,10♣,stand,stand,lose,-1.0
+488,488,llm,0,7♥ 7♥,14,2♥,split,split,,
+488,488,llm,1,7♥ 2♦,9,2♥,hit,hit,,
+488,488,llm,2,7♥ 2♦ 4♠,13,2♥,stand,stand,,
+488,488,llm,3,7♥ J♠,17,2♥,stand,stand,"win, win",2.0
+489,489,llm,0,2♠ A♠,13,2♦,hit,hit,,
+489,489,llm,1,2♠ A♠ J♥,13,2♦,hit,stand,lose,-1.0
+490,490,llm,0,10♣ A♠,21,7♦,none,none,blackjack,1.5
+491,491,llm,0,8♠ 9♣,17,9♠,stand,stand,lose,-1.0
+492,492,llm,0,3♥ 5♠,8,7♣,hit,hit,,
+492,492,llm,1,3♥ 5♠ 5♦,13,7♣,hit,hit,,
+492,492,llm,2,3♥ 5♠ 5♦ 3♥,16,7♣,hit,hit,,
+492,492,llm,3,3♥ 5♠ 5♦ 3♥ 5♣,21,7♣,stand,stand,win,1.0
+493,493,llm,0,A♦ 2♠,13,K♠,hit,hit,,
+493,493,llm,1,A♦ 2♠ A♦,14,K♠,hit,hit,,
+493,493,llm,2,A♦ 2♠ A♦ K♠,14,K♠,hit,hit,,
+493,493,llm,3,A♦ 2♠ A♦ K♠ 7♦,21,K♠,stand,stand,push,0.0
+494,494,llm,0,8♠ J♥,18,K♦,stand,stand,win,1.0
+495,495,llm,0,7♣ 2♦,9,7♠,hit,hit,,
+495,495,llm,1,7♣ 2♦ 9♣,18,7♠,stand,stand,win,1.0
+496,496,llm,0,Q♦ Q♥,20,K♣,stand,stand,win,1.0
+497,497,llm,0,6♣ 4♣,10,9♠,double,double,win,2.0
+498,498,llm,0,A♣ J♦,21,6♥,none,none,blackjack,1.5
+499,499,llm,0,8♥ 10♠,18,A♣,none,none,lose,-1.0
+500,500,llm,0,4♣ Q♣,14,J♥,stand,hit,lose,-1.0
+501,501,llm,0,3♠ 8♦,11,A♦,none,none,lose,-1.0
+502,502,llm,0,K♠ 10♣,20,6♣,stand,stand,win,1.0
+503,503,llm,0,J♣ A♦,21,A♦,none,none,blackjack,1.5
+504,504,llm,0,5♣ 7♣,12,8♣,hit,hit,,
+504,504,llm,1,5♣ 7♣ 9♠,21,8♣,stand,stand,win,1.0
+505,505,llm,0,K♦ Q♠,20,3♣,stand,stand,win,1.0
+506,506,llm,0,6♠ 3♠,9,9♣,hit,hit,,
+506,506,llm,1,6♠ 3♠ 6♥,15,9♣,hit,hit,lose,-1.0
+507,507,llm,0,A♣ 10♦,21,10♣,none,none,blackjack,1.5
+508,508,llm,0,6♦ 8♠,14,8♥,hit,hit,,
+508,508,llm,1,6♦ 8♠ A♠,15,8♥,hit,hit,,
+508,508,llm,2,6♦ 8♠ A♠ 5♣,20,8♥,stand,stand,win,1.0
+509,509,llm,0,9♥ 8♣,17,5♥,stand,stand,lose,-1.0
+510,510,llm,0,J♦ 8♥,18,5♠,stand,stand,win,1.0
+511,511,llm,0,5♥ Q♥,15,K♦,surrender,surrender,surrender,-0.5
+512,512,llm,0,J♥ 9♦,19,5♦,stand,stand,win,1.0
+513,513,llm,0,10♥ 4♦,14,2♥,stand,stand,lose,-1.0
+514,514,llm,0,3♣ 4♥,7,6♥,hit,hit,,
+514,514,llm,1,3♣ 4♥ 5♥,12,6♥,stand,stand,win,1.0
+515,515,llm,0,8♣ 3♠,11,Q♣,double,double,win,2.0
+516,516,llm,0,6♦ 5♣,11,5♦,double,double,win,2.0
+517,517,llm,0,2♦ Q♠,12,K♠,none,none,lose,-1.0
+518,518,llm,0,10♣ A♦,21,8♥,none,none,blackjack,1.5
+519,519,llm,0,J♠ 3♦,13,7♦,hit,hit,,
+519,519,llm,1,J♠ 3♦ 6♦,19,7♦,stand,stand,win,1.0
+520,520,llm,0,8♥ 9♠,17,6♣,stand,stand,win,1.0
+521,521,llm,0,A♠ 4♥,15,2♥,hit,hit,,
+521,521,llm,1,A♠ 4♥ 3♥,18,2♥,stand,stand,win,1.0
+522,522,llm,0,2♠ 4♠,6,4♦,hit,hit,,
+522,522,llm,1,2♠ 4♠ 5♦,11,4♦,hit,hit,,
+522,522,llm,2,2♠ 4♠ 5♦ 9♠,20,4♦,stand,stand,win,1.0
+523,523,llm,0,5♠ K♣,15,10♥,surrender,surrender,surrender,-0.5
+524,524,llm,0,K♥ J♣,20,7♥,stand,stand,win,1.0
+525,525,llm,0,8♦ 10♣,18,9♥,stand,stand,lose,-1.0
+526,526,llm,0,2♣ 5♠,7,7♥,hit,hit,,
+526,526,llm,1,2♣ 5♠ 10♠,17,7♥,stand,stand,win,1.0
+527,527,llm,0,3♦ 6♣,9,5♦,double,double,push,0.0
+528,528,llm,0,5♣ 2♥,7,6♣,hit,hit,,
+528,528,llm,1,5♣ 2♥ 8♣,15,6♣,stand,stand,lose,-1.0
+529,529,llm,0,A♦ 3♣,14,6♦,double,double,lose,-2.0
+530,530,llm,0,A♥ A♦,12,4♥,split,split,"win, win",2.0
+531,531,llm,0,A♥ 2♠,13,7♦,hit,hit,,
+531,531,llm,1,A♥ 2♠ 3♦,16,7♦,hit,hit,,
+531,531,llm,2,A♥ 2♠ 3♦ 3♦,19,7♦,stand,stand,win,1.0
+532,532,llm,0,5♥ 10♠,15,Q♦,surrender,surrender,surrender,-0.5
+533,533,llm,0,K♣ 9♣,19,J♣,stand,stand,push,0.0
+534,534,llm,0,10♥ Q♠,20,J♦,stand,stand,win,1.0
+535,535,llm,0,9♦ 7♠,16,8♥,hit,hit,,
+535,535,llm,1,9♦ 7♠ A♠,17,8♥,stand,stand,lose,-1.0
+536,536,llm,0,8♠ A♦,19,A♥,stand,stand,win,1.0
+537,537,llm,0,8♦ Q♥,18,Q♦,stand,stand,lose,-1.0
+538,538,llm,0,10♣ K♦,20,10♠,stand,stand,push,0.0
+539,539,llm,0,10♠ K♦,20,9♠,stand,stand,win,1.0
+540,540,llm,0,10♣ 7♣,17,3♦,stand,stand,lose,-1.0
+541,541,llm,0,3♣ 7♣,10,4♥,double,double,win,2.0
+542,542,llm,0,A♣ 7♣,18,7♥,stand,stand,win,1.0
+543,543,llm,0,A♥ 6♣,17,9♠,hit,hit,,
+543,543,llm,1,A♥ 6♣ 5♠,12,9♠,hit,hit,lose,-1.0
+544,544,llm,0,2♠ 4♥,6,4♥,hit,hit,,
+544,544,llm,1,2♠ 4♥ A♣,17,4♥,hit,hit,,
+544,544,llm,2,2♠ 4♥ A♣ 10♣,17,4♥,stand,stand,push,0.0
+545,545,llm,0,8♥ 3♦,11,4♣,double,double,lose,-2.0
+546,546,llm,0,9♥ 10♠,19,K♣,stand,stand,push,0.0
+547,547,llm,0,Q♦ 9♣,19,A♣,stand,stand,win,1.0
+548,548,llm,0,6♦ K♠,16,A♠,none,none,lose,-1.0
+549,549,llm,0,A♠ 7♣,18,8♣,stand,stand,win,1.0
+550,550,llm,0,9♣ 3♥,12,A♠,hit,hit,,
+550,550,llm,1,9♣ 3♥ 8♦,20,A♠,stand,stand,push,0.0
+551,551,llm,0,4♥ 9♥,13,6♦,stand,stand,lose,-1.0
+552,552,llm,0,Q♥ J♠,20,A♣,stand,stand,win,1.0
+553,553,llm,0,9♣ K♦,19,2♦,stand,stand,win,1.0
+554,554,llm,0,5♥ Q♣,15,8♦,hit,hit,,
+554,554,llm,1,5♥ Q♣ 4♥,19,8♦,stand,stand,win,1.0
+555,555,llm,0,9♠ 6♣,15,Q♣,surrender,surrender,surrender,-0.5
+556,556,llm,0,10♣ 8♣,18,7♠,stand,stand,win,1.0
+557,557,llm,0,A♥ 2♥,13,K♠,none,none,lose,-1.0
+558,558,llm,0,4♠ 8♦,12,7♣,hit,hit,,
+558,558,llm,1,4♠ 8♦ 8♥,20,7♣,stand,stand,win,1.0
+559,559,llm,0,9♥ 3♦,12,Q♠,hit,hit,,
+559,559,llm,1,9♥ 3♦ 5♣,17,Q♠,stand,stand,push,0.0
+560,560,llm,0,J♦ 4♣,14,J♣,hit,hit,lose,-1.0
+561,561,llm,0,6♠ J♠,16,Q♥,surrender,surrender,surrender,-0.5
+562,562,llm,0,9♣ 5♣,14,J♥,hit,hit,lose,-1.0
+563,563,llm,0,9♥ 4♥,13,A♠,none,none,lose,-1.0
+564,564,llm,0,8♠ 3♦,11,J♠,double,double,lose,-2.0
+565,565,llm,0,10♣ K♣,20,J♥,stand,stand,push,0.0
+566,566,llm,0,3♠ 4♥,7,A♦,hit,hit,,
+566,566,llm,1,3♠ 4♥ 2♦,9,A♦,hit,hit,,
+566,566,llm,2,3♠ 4♥ 2♦ 2♠,11,A♦,hit,hit,,
+566,566,llm,3,3♠ 4♥ 2♦ 2♠ 10♠,21,A♦,stand,stand,win,1.0
+567,567,llm,0,9♦ J♣,19,9♥,stand,stand,win,1.0
+568,568,llm,0,2♥ 4♦,6,6♦,hit,hit,,
+568,568,llm,1,2♥ 4♦ J♣,16,6♦,stand,stand,lose,-1.0
+569,569,llm,0,4♦ 4♦,8,6♣,split,split,,
+569,569,llm,1,4♦ 2♦,6,6♣,hit,hit,,
+569,569,llm,2,4♦ 2♦ 9♠,15,6♣,stand,stand,,
+569,569,llm,3,4♦ 7♣,11,6♣,double,double,"lose, lose",-3.0
+570,570,llm,0,2♠ 9♥,11,A♠,hit,double,,
+570,570,llm,1,2♠ 9♥ A♦,12,A♠,hit,hit,,
+570,570,llm,2,2♠ 9♥ A♦ 4♥,16,A♠,hit,hit,,
+570,570,llm,3,2♠ 9♥ A♦ 4♥ 5♣,21,A♠,stand,stand,win,1.0
+571,571,llm,0,2♣ 8♥,10,4♣,double,double,lose,-2.0
+572,572,llm,0,7♥ 2♣,9,10♠,hit,hit,,
+572,572,llm,1,7♥ 2♣ 4♣,13,10♠,hit,hit,lose,-1.0
+573,573,llm,0,5♣ 9♣,14,K♥,hit,hit,lose,-1.0
+574,574,llm,0,5♥ 9♦,14,8♣,hit,hit,,
+574,574,llm,1,5♥ 9♦ 4♥,18,8♣,stand,stand,lose,-1.0
+575,575,llm,0,2♥ 5♠,7,10♦,hit,hit,,
+575,575,llm,1,2♥ 5♠ 5♥,12,10♦,hit,hit,,
+575,575,llm,2,2♥ 5♠ 5♥ 9♠,21,10♦,stand,stand,win,1.0
+576,576,llm,0,3♠ J♠,13,5♠,stand,stand,lose,-1.0
+577,577,llm,0,7♠ 3♠,10,Q♦,hit,hit,,
+577,577,llm,1,7♠ 3♠ 4♣,14,Q♦,hit,hit,,
+577,577,llm,2,7♠ 3♠ 4♣ 6♥,20,Q♦,stand,stand,win,1.0
+578,578,llm,0,7♠ 9♣,16,7♣,hit,hit,,
+578,578,llm,1,7♠ 9♣ 2♣,18,7♣,stand,stand,win,1.0
+579,579,llm,0,7♥ 4♠,11,Q♠,double,double,lose,-2.0
+580,580,llm,0,10♥ 9♠,19,6♥,stand,stand,lose,-1.0
+581,581,llm,0,5♥ 6♠,11,4♠,double,double,push,0.0
+582,582,llm,0,2♥ A♥,13,9♥,hit,hit,,
+582,582,llm,1,2♥ A♥ A♣,14,9♥,hit,hit,,
+582,582,llm,2,2♥ A♥ A♣ 2♠,16,9♥,hit,hit,,
+582,582,llm,3,2♥ A♥ A♣ 2♠ 5♦,21,9♥,stand,stand,win,1.0
+583,583,llm,0,4♦ 6♠,10,8♥,double,double,lose,-2.0
+584,584,llm,0,7♠ 10♦,17,K♦,none,none,lose,-1.0
+585,585,llm,0,7♣ 7♠,14,7♠,split,split,,
+585,585,llm,1,7♣ 2♣,9,7♠,hit,hit,,
+585,585,llm,2,7♣ 2♣ Q♥,19,7♠,stand,stand,,
+585,585,llm,3,7♠ 9♣,16,7♠,hit,hit,"win, lose",0.0
+586,586,llm,0,Q♣ Q♠,20,10♥,stand,stand,win,1.0
+587,587,llm,0,Q♥ 7♦,17,10♦,stand,stand,lose,-1.0
+588,588,llm,0,Q♠ 10♥,20,10♠,stand,stand,lose,-1.0
+589,589,llm,0,J♥ K♥,20,6♦,stand,stand,win,1.0
+590,590,llm,0,A♥ 4♦,15,A♦,hit,hit,,
+590,590,llm,1,A♥ 4♦ J♠,15,A♦,hit,hit,lose,-1.0
+591,591,llm,0,9♦ A♠,20,K♣,stand,stand,win,1.0
+592,592,llm,0,K♣ 3♥,13,7♣,hit,hit,lose,-1.0
+593,593,llm,0,7♥ 9♦,16,7♣,hit,hit,,
+593,593,llm,1,7♥ 9♦ 4♠,20,7♣,stand,stand,win,1.0
+594,594,llm,0,A♥ 9♠,20,8♣,stand,stand,win,1.0
+595,595,llm,0,2♣ 3♥,5,10♦,hit,hit,,
+595,595,llm,1,2♣ 3♥ 6♥,11,10♦,hit,hit,,
+595,595,llm,2,2♣ 3♥ 6♥ Q♥,21,10♦,stand,stand,win,1.0
+596,596,llm,0,K♠ K♣,20,A♦,none,none,lose,-1.0
+597,597,llm,0,A♠ 3♣,14,3♣,hit,hit,,
+597,597,llm,1,A♠ 3♣ A♠,15,3♣,hit,hit,,
+597,597,llm,2,A♠ 3♣ A♠ 3♦,18,3♣,stand,stand,lose,-1.0
+598,598,llm,0,K♠ 6♥,16,Q♦,surrender,surrender,surrender,-0.5
+599,599,llm,0,6♦ K♥,16,8♦,hit,hit,,
+599,599,llm,1,6♦ K♥ 2♦,18,8♦,stand,stand,push,0.0
+600,600,llm,0,7♣ 6♦,13,9♦,hit,hit,,
+600,600,llm,1,7♣ 6♦ 2♥,15,9♦,hit,hit,,
+600,600,llm,2,7♣ 6♦ 2♥ 6♠,21,9♦,stand,stand,win,1.0
+601,601,llm,0,9♠ 8♦,17,6♣,stand,stand,lose,-1.0
+602,602,llm,0,Q♠ 4♦,14,5♠,stand,stand,win,1.0
+603,603,llm,0,8♣ 7♣,15,J♦,surrender,surrender,surrender,-0.5
+604,604,llm,0,8♣ 4♠,12,A♠,hit,hit,,
+604,604,llm,1,8♣ 4♠ 9♣,21,A♠,stand,stand,win,1.0
+605,605,llm,0,Q♣ 3♦,13,10♣,hit,hit,,
+605,605,llm,1,Q♣ 3♦ 8♠,21,10♣,stand,stand,win,1.0
+606,606,llm,0,4♣ 3♦,7,5♣,hit,hit,,
+606,606,llm,1,4♣ 3♦ 5♦,12,5♣,stand,stand,win,1.0
+607,607,llm,0,3♠ 5♦,8,6♥,hit,hit,,
+607,607,llm,1,3♠ 5♦ 8♦,16,6♥,stand,stand,lose,-1.0
+608,608,llm,0,4♦ 3♠,7,2♥,hit,hit,,
+608,608,llm,1,4♦ 3♠ 9♦,16,2♥,stand,stand,win,1.0
+609,609,llm,0,4♣ 10♦,14,4♥,stand,stand,lose,-1.0
+610,610,llm,0,8♦ 3♥,11,2♥,double,double,win,2.0
+611,611,llm,0,7♦ 6♦,13,Q♦,hit,hit,,
+611,611,llm,1,7♦ 6♦ A♦,14,Q♦,hit,hit,lose,-1.0
+612,612,llm,0,K♥ J♦,20,7♥,stand,stand,win,1.0
+613,613,llm,0,K♣ K♥,20,A♥,none,none,lose,-1.0
+614,614,llm,0,A♦ J♠,21,3♦,none,none,blackjack,1.5
+615,615,llm,0,3♦ 2♠,5,K♣,hit,hit,,
+615,615,llm,1,3♦ 2♠ 10♦,15,K♣,hit,hit,,
+615,615,llm,2,3♦ 2♠ 10♦ 6♠,21,K♣,stand,stand,win,1.0
+616,616,llm,0,2♦ 9♥,11,10♦,double,double,lose,-2.0
+617,617,llm,0,10♣ 8♣,18,K♦,stand,stand,lose,-1.0
+618,618,llm,0,3♣ 6♦,9,4♠,double,double,win,2.0
+619,619,llm,0,2♥ K♦,12,5♥,stand,stand,lose,-1.0
+620,620,llm,0,Q♥ A♠,21,3♦,none,none,blackjack,1.5
+621,621,llm,0,6♥ 3♣,9,7♥,hit,hit,,
+621,621,llm,1,6♥ 3♣ 7♠,16,7♥,hit,hit,lose,-1.0
+622,622,llm,0,10♠ 8♠,18,6♣,stand,stand,lose,-1.0
+623,623,llm,0,Q♦ J♣,20,K♣,stand,stand,win,1.0
+624,624,llm,0,7♠ 9♦,16,5♦,stand,stand,lose,-1.0
+625,625,llm,0,3♥ 9♠,12,2♣,hit,hit,lose,-1.0
+626,626,llm,0,7♣ K♥,17,Q♥,stand,stand,lose,-1.0
+627,627,llm,0,K♦ 4♥,14,3♠,stand,stand,win,1.0
+628,628,llm,0,10♠ 10♦,20,10♠,stand,stand,push,0.0
+629,629,llm,0,3♣ 5♠,8,6♥,hit,hit,,
+629,629,llm,1,3♣ 5♠ 7♥,15,6♥,stand,stand,win,1.0
+630,630,llm,0,A♦ A♠,12,3♣,split,split,"win, push",1.0
+631,631,llm,0,4♠ 5♥,9,6♦,double,double,lose,-2.0
+632,632,llm,0,7♣ A♥,18,4♦,double,double,push,0.0
+633,633,llm,0,J♦ 3♣,13,9♣,hit,hit,,
+633,633,llm,1,J♦ 3♣ 8♥,21,9♣,stand,stand,win,1.0
+634,634,llm,0,2♦ 9♥,11,10♥,double,double,win,2.0
+635,635,llm,0,9♦ 3♠,12,A♠,hit,hit,lose,-1.0
+636,636,llm,0,K♠ K♣,20,4♥,stand,stand,lose,-1.0
+637,637,llm,0,6♠ 8♣,14,Q♠,hit,hit,,
+637,637,llm,1,6♠ 8♣ 3♣,17,Q♠,stand,stand,lose,-1.0
+638,638,llm,0,4♦ A♦,15,10♣,none,none,lose,-1.0
+639,639,llm,0,7♠ 4♣,11,Q♦,double,double,win,2.0
+640,640,llm,0,J♥ 2♠,12,A♦,hit,hit,,
+640,640,llm,1,J♥ 2♠ 6♣,18,A♦,stand,stand,lose,-1.0
+641,641,llm,0,2♠ A♣,13,8♥,hit,hit,,
+641,641,llm,1,2♠ A♣ K♥,13,8♥,hit,hit,lose,-1.0
+642,642,llm,0,A♦ K♠,21,8♥,none,none,blackjack,1.5
+643,643,llm,0,10♦ 4♥,14,5♠,stand,stand,win,1.0
+644,644,llm,0,3♠ A♥,14,8♥,hit,hit,,
+644,644,llm,1,3♠ A♥ Q♦,14,8♥,hit,hit,,
+644,644,llm,2,3♠ A♥ Q♦ 6♠,20,8♥,stand,stand,win,1.0
+645,645,llm,0,J♠ 7♥,17,2♣,stand,stand,win,1.0
+646,646,llm,0,9♣ Q♥,19,3♠,stand,stand,win,1.0
+647,647,llm,0,5♦ J♣,15,10♦,surrender,surrender,surrender,-0.5
+648,648,llm,0,2♠ 8♥,10,8♣,double,double,lose,-2.0
+649,649,llm,0,3♣ 2♣,5,K♥,hit,hit,,
+649,649,llm,1,3♣ 2♣ 10♠,15,K♥,hit,hit,lose,-1.0
+650,650,llm,0,6♥ A♠,17,10♣,hit,hit,,
+650,650,llm,1,6♥ A♠ 6♦,13,10♣,hit,hit,lose,-1.0
+651,651,llm,0,J♦ 3♦,13,4♣,stand,stand,win,1.0
+652,652,llm,0,10♦ Q♣,20,10♥,stand,stand,push,0.0
+653,653,llm,0,7♠ J♣,17,Q♣,stand,stand,lose,-1.0
+654,654,llm,0,5♣ 7♥,12,3♠,hit,hit,,
+654,654,llm,1,5♣ 7♥ 8♦,20,3♠,stand,stand,win,1.0
+655,655,llm,0,7♦ 5♠,12,7♠,hit,hit,lose,-1.0
+656,656,llm,0,10♦ 5♥,15,8♣,hit,hit,,
+656,656,llm,1,10♦ 5♥ 5♦,20,8♣,stand,stand,win,1.0
+657,657,llm,0,7♠ A♦,18,7♥,stand,stand,win,1.0
+658,658,llm,0,2♣ 8♣,10,4♠,double,double,lose,-2.0
+659,659,llm,0,8♠ 10♠,18,K♣,stand,stand,lose,-1.0
+660,660,llm,0,10♥ A♦,21,A♣,none,none,blackjack,1.5
+661,661,llm,0,K♣ 4♥,14,6♥,stand,stand,lose,-1.0
+662,662,llm,0,8♥ 8♦,16,2♦,split,split,,
+662,662,llm,1,8♥ 2♣,10,2♦,double,double,,
+662,662,llm,2,8♦ 2♠,10,2♦,double,double,"lose, lose",-4.0
+663,663,llm,0,K♥ A♠,21,7♦,none,none,blackjack,1.5
+664,664,llm,0,5♥ Q♣,15,8♣,hit,hit,,
+664,664,llm,1,5♥ Q♣ 4♥,19,8♣,stand,stand,win,1.0
+665,665,llm,0,8♥ K♠,18,A♥,stand,stand,lose,-1.0
+666,666,llm,0,A♦ 3♦,14,K♣,hit,hit,,
+666,666,llm,1,A♦ 3♦ J♠,14,K♣,hit,hit,lose,-1.0
+667,667,llm,0,2♥ 3♦,5,3♣,hit,hit,,
+667,667,llm,1,2♥ 3♦ A♦,16,3♣,hit,hit,,
+667,667,llm,2,2♥ 3♦ A♦ 4♥,20,3♣,stand,stand,lose,-1.0
+668,668,llm,0,4♣ J♥,14,J♥,surrender,hit,surrender,-0.5
+669,669,llm,0,K♠ 8♥,18,10♠,stand,stand,push,0.0
+670,670,llm,0,5♣ 9♠,14,K♦,surrender,hit,surrender,-0.5
+671,671,llm,0,3♠ 2♠,5,6♦,hit,hit,,
+671,671,llm,1,3♠ 2♠ Q♣,15,6♦,stand,stand,lose,-1.0
+672,672,llm,0,J♥ 7♥,17,4♥,stand,stand,win,1.0
+673,673,llm,0,K♥ 9♦,19,3♣,stand,stand,win,1.0
+674,674,llm,0,A♠ 4♠,15,5♠,double,double,win,2.0
+675,675,llm,0,3♥ A♠,14,9♦,hit,hit,,
+675,675,llm,1,3♥ A♠ 5♠,19,9♦,stand,stand,lose,-1.0
+676,676,llm,0,4♦ A♦,15,8♣,hit,hit,,
+676,676,llm,1,4♦ A♦ 7♥,12,8♣,hit,hit,,
+676,676,llm,2,4♦ A♦ 7♥ 9♥,21,8♣,stand,stand,win,1.0
+677,677,llm,0,10♣ 2♦,12,9♣,hit,hit,lose,-1.0
+678,678,llm,0,6♥ 2♥,8,9♥,hit,hit,,
+678,678,llm,1,6♥ 2♥ 4♥,12,9♥,hit,hit,,
+678,678,llm,2,6♥ 2♥ 4♥ 8♣,20,9♥,stand,stand,push,0.0
+679,679,llm,0,A♠ 4♠,15,A♥,hit,hit,,
+679,679,llm,1,A♠ 4♠ 9♠,14,A♥,hit,hit,lose,-1.0
+680,680,llm,0,5♠ 5♦,10,4♠,double,double,lose,-2.0
+681,681,llm,0,5♥ 7♥,12,7♥,hit,hit,,
+681,681,llm,1,5♥ 7♥ 3♠,15,7♥,hit,hit,,
+681,681,llm,2,5♥ 7♥ 3♠ A♦,16,7♥,hit,hit,lose,-1.0
+682,682,llm,0,Q♥ K♠,20,4♦,stand,stand,win,1.0
+683,683,llm,0,10♠ A♣,21,5♦,none,none,blackjack,1.5
+684,684,llm,0,5♠ 4♦,9,Q♠,hit,hit,,
+684,684,llm,1,5♠ 4♦ 5♦,14,Q♠,hit,hit,lose,-1.0
+685,685,llm,0,J♠ 10♦,20,5♠,stand,stand,win,1.0
+686,686,llm,0,J♥ 9♠,19,4♦,stand,stand,win,1.0
+687,687,llm,0,A♠ A♣,12,7♦,split,split,"win, win",2.0
+688,688,llm,0,9♣ 8♠,17,J♥,stand,stand,lose,-1.0
+689,689,llm,0,A♠ 3♦,14,5♣,double,double,win,2.0
+690,690,llm,0,K♥ 2♠,12,5♣,stand,stand,win,1.0
+691,691,llm,0,K♦ 3♥,13,3♦,stand,stand,win,1.0
+692,692,llm,0,A♥ Q♦,21,3♦,none,none,blackjack,1.5
+693,693,llm,0,A♣ K♣,21,8♦,none,none,blackjack,1.5
+694,694,llm,0,8♣ A♠,19,A♣,none,none,lose,-1.0
+695,695,llm,0,2♦ 4♦,6,10♦,hit,hit,,
+695,695,llm,1,2♦ 4♦ 9♦,15,10♦,hit,hit,lose,-1.0
+696,696,llm,0,9♣ J♦,19,5♦,stand,stand,win,1.0
+697,697,llm,0,7♦ 4♣,11,10♦,double,double,lose,-2.0
+698,698,llm,0,5♣ 10♥,15,2♠,stand,stand,lose,-1.0
+699,699,llm,0,7♣ K♦,17,8♦,stand,stand,lose,-1.0
+700,700,llm,0,9♣ 10♦,19,9♠,stand,stand,win,1.0
+701,701,llm,0,2♠ 2♥,4,10♠,hit,hit,,
+701,701,llm,1,2♠ 2♥ 10♦,14,10♠,hit,hit,,
+701,701,llm,2,2♠ 2♥ 10♦ 2♠,16,10♠,hit,hit,lose,-1.0
+702,702,llm,0,5♥ 4♦,9,6♦,double,double,win,2.0
+703,703,llm,0,A♦ 3♣,14,8♥,hit,hit,,
+703,703,llm,1,A♦ 3♣ Q♦,14,8♥,hit,hit,,
+703,703,llm,2,A♦ 3♣ Q♦ 7♥,21,8♥,stand,stand,win,1.0
+704,704,llm,0,10♣ 2♥,12,6♣,stand,stand,lose,-1.0
+705,705,llm,0,4♣ 10♠,14,6♥,stand,stand,lose,-1.0
+706,706,llm,0,7♣ 7♣,14,Q♠,surrender,hit,surrender,-0.5
+707,707,llm,0,J♥ 4♦,14,K♠,surrender,hit,surrender,-0.5
+708,708,llm,0,K♥ 8♠,18,J♦,stand,stand,win,1.0
+709,709,llm,0,2♦ 3♣,5,9♣,hit,hit,,
+709,709,llm,1,2♦ 3♣ 4♥,9,9♣,hit,hit,,
+709,709,llm,2,2♦ 3♣ 4♥ Q♣,19,9♣,stand,stand,push,0.0
+710,710,llm,0,A♣ 10♦,21,K♦,none,none,blackjack,1.5
+711,711,llm,0,3♠ J♥,13,8♠,hit,hit,,
+711,711,llm,1,3♠ J♥ A♥,14,8♠,hit,hit,,
+711,711,llm,2,3♠ J♥ A♥ A♥,15,8♠,hit,hit,lose,-1.0
+712,712,llm,0,8♠ 6♠,14,10♠,hit,hit,lose,-1.0
+713,713,llm,0,6♠ 6♣,12,4♠,split,split,,
+713,713,llm,1,6♠ K♠,16,4♠,stand,stand,,
+713,713,llm,2,6♣ 8♣,14,4♠,stand,stand,"lose, lose",-2.0
+714,714,llm,0,9♥ 10♥,19,J♣,stand,stand,lose,-1.0
+715,715,llm,0,4♥ K♦,14,A♣,stand,hit,lose,-1.0
+716,716,llm,0,7♣ Q♦,17,7♣,stand,stand,win,1.0
+717,717,llm,0,6♦ 7♠,13,2♣,hit,stand,,
+717,717,llm,1,6♦ 7♠ 6♠,19,2♣,stand,stand,lose,-1.0
+718,718,llm,0,5♣ 2♠,7,K♥,hit,hit,,
+718,718,llm,1,5♣ 2♠ 4♦,11,K♥,hit,hit,,
+718,718,llm,2,5♣ 2♠ 4♦ Q♠,21,K♥,stand,stand,win,1.0
+719,719,llm,0,K♣ 4♠,14,7♥,hit,hit,,
+719,719,llm,1,K♣ 4♠ 2♠,16,7♥,hit,hit,lose,-1.0
+720,720,llm,0,3♣ 9♠,12,8♥,hit,hit,,
+720,720,llm,1,3♣ 9♠ 4♣,16,8♥,hit,hit,lose,-1.0
+721,721,llm,0,2♣ 5♠,7,5♥,hit,hit,,
+721,721,llm,1,2♣ 5♠ 2♠,9,5♥,hit,hit,,
+721,721,llm,2,2♣ 5♠ 2♠ 8♥,17,5♥,stand,stand,lose,-1.0
+722,722,llm,0,A♦ A♠,12,4♠,split,split,"win, win",2.0
+723,723,llm,0,6♦ 2♥,8,K♣,hit,hit,,
+723,723,llm,1,6♦ 2♥ 10♠,18,K♣,stand,stand,lose,-1.0
+724,724,llm,0,7♠ 7♥,14,J♦,hit,hit,,
+724,724,llm,1,7♠ 7♥ A♠,15,J♦,hit,hit,lose,-1.0
+725,725,llm,0,6♠ A♦,17,9♠,hit,hit,,
+725,725,llm,1,6♠ A♦ Q♦,17,9♠,stand,stand,lose,-1.0
+726,726,llm,0,6♣ 3♥,9,2♣,hit,hit,,
+726,726,llm,1,6♣ 3♥ 10♠,19,2♣,stand,stand,push,0.0
+727,727,llm,0,Q♥ 7♥,17,J♣,stand,stand,win,1.0
+728,728,llm,0,9♦ 3♣,12,6♦,stand,stand,win,1.0
+729,729,llm,0,K♥ J♣,20,10♠,stand,stand,push,0.0
+730,730,llm,0,A♠ 6♠,17,Q♥,none,none,lose,-1.0
+731,731,llm,0,J♣ 3♥,13,3♦,stand,stand,lose,-1.0
+732,732,llm,0,J♥ Q♦,20,4♠,stand,stand,win,1.0
+733,733,llm,0,7♥ 8♦,15,Q♦,surrender,surrender,surrender,-0.5
+734,734,llm,0,7♦ A♦,18,6♣,double,double,win,2.0
+735,735,llm,0,J♥ K♥,20,3♦,stand,stand,win,1.0
+736,736,llm,0,A♦ Q♣,21,J♣,none,none,blackjack,1.5
+737,737,llm,0,3♥ 7♠,10,8♣,double,double,push,0.0
+738,738,llm,0,7♣ 2♣,9,10♠,hit,hit,,
+738,738,llm,1,7♣ 2♣ 8♦,17,10♠,stand,stand,lose,-1.0
+739,739,llm,0,10♠ K♣,20,K♦,stand,stand,win,1.0
+740,740,llm,0,10♣ 4♠,14,J♦,hit,hit,lose,-1.0
+741,741,llm,0,J♥ Q♥,20,J♥,stand,stand,win,1.0
+742,742,llm,0,6♥ 7♦,13,5♥,stand,stand,win,1.0
+743,743,llm,0,4♠ 9♦,13,A♣,surrender,hit,surrender,-0.5
+744,744,llm,0,4♥ 5♦,9,4♦,double,double,win,2.0
+745,745,llm,0,10♥ 7♣,17,9♦,stand,stand,lose,-1.0
+746,746,llm,0,10♥ 4♣,14,J♠,hit,hit,,
+746,746,llm,1,10♥ 4♣ 4♣,18,J♠,stand,stand,lose,-1.0
+747,747,llm,0,J♠ 10♦,20,10♥,stand,stand,push,0.0
+748,748,llm,0,Q♣ J♥,20,3♠,stand,stand,win,1.0
+749,749,llm,0,A♦ J♣,21,9♦,none,none,blackjack,1.5
+750,750,llm,0,K♥ 8♦,18,Q♥,stand,stand,push,0.0
+751,751,llm,0,8♥ J♥,18,7♥,stand,stand,push,0.0
+752,752,llm,0,6♥ 5♦,11,8♦,double,double,win,2.0
+753,753,llm,0,6♣ 10♥,16,Q♣,surrender,surrender,surrender,-0.5
+754,754,llm,0,2♠ 8♦,10,9♠,double,double,push,0.0
+755,755,llm,0,8♥ 3♦,11,Q♠,double,double,push,0.0
+756,756,llm,0,3♣ J♣,13,10♣,hit,hit,lose,-1.0
+757,757,llm,0,9♠ 5♠,14,A♥,surrender,hit,surrender,-0.5
+758,758,llm,0,2♦ K♥,12,8♣,hit,hit,,
+758,758,llm,1,2♦ K♥ 3♥,15,8♣,hit,hit,lose,-1.0
+759,759,llm,0,6♣ A♣,17,4♦,double,double,lose,-2.0
+760,760,llm,0,5♦ 5♦,10,3♥,double,double,push,0.0
+761,761,llm,0,K♥ 3♣,13,J♥,hit,hit,,
+761,761,llm,1,K♥ 3♣ 8♥,21,J♥,stand,stand,win,1.0
+762,762,llm,0,8♣ 6♠,14,4♣,stand,stand,win,1.0
+763,763,llm,0,2♦ J♥,12,9♠,hit,hit,,
+763,763,llm,1,2♦ J♥ 5♥,17,9♠,stand,stand,win,1.0
+764,764,llm,0,7♣ 7♥,14,K♣,none,none,lose,-1.0
+765,765,llm,0,6♦ 10♦,16,K♣,surrender,surrender,surrender,-0.5
+766,766,llm,0,A♣ J♦,21,Q♥,none,none,push,0.0
+767,767,llm,0,4♥ Q♣,14,A♠,surrender,hit,surrender,-0.5
+768,768,llm,0,7♠ A♦,18,6♣,double,double,win,2.0
+769,769,llm,0,7♥ 2♥,9,8♣,hit,hit,,
+769,769,llm,1,7♥ 2♥ Q♦,19,8♣,stand,stand,lose,-1.0
+770,770,llm,0,2♠ Q♦,12,A♣,hit,hit,,
+770,770,llm,1,2♠ Q♦ 6♦,18,A♣,stand,stand,win,1.0
+771,771,llm,0,Q♣ K♣,20,2♣,stand,stand,lose,-1.0
+772,772,llm,0,3♥ A♥,14,Q♦,hit,hit,,
+772,772,llm,1,3♥ A♥ 9♠,13,Q♦,hit,hit,lose,-1.0
+773,773,llm,0,Q♣ 6♣,16,9♠,surrender,surrender,surrender,-0.5
+774,774,llm,0,K♠ J♥,20,8♥,stand,stand,win,1.0
+775,775,llm,0,3♠ 7♣,10,K♥,hit,hit,,
+775,775,llm,1,3♠ 7♣ 8♥,18,K♥,stand,stand,win,1.0
+776,776,llm,0,J♦ 4♦,14,Q♠,hit,hit,lose,-1.0
+777,777,llm,0,2♦ K♠,12,9♦,hit,hit,lose,-1.0
+778,778,llm,0,10♦ 2♦,12,Q♦,hit,hit,,
+778,778,llm,1,10♦ 2♦ 8♥,20,Q♦,stand,stand,win,1.0
+779,779,llm,0,4♣ K♣,14,8♦,hit,hit,lose,-1.0
+780,780,llm,0,A♠ 5♠,16,10♥,hit,hit,,
+780,780,llm,1,A♠ 5♠ 7♥,13,10♥,hit,hit,,
+780,780,llm,2,A♠ 5♠ 7♥ 4♥,17,10♥,stand,stand,push,0.0
+781,781,llm,0,7♥ Q♠,17,Q♦,stand,stand,lose,-1.0
+782,782,llm,0,6♥ 9♥,15,A♦,surrender,hit,surrender,-0.5
+783,783,llm,0,10♦ 8♥,18,8♠,stand,stand,push,0.0
+784,784,llm,0,2♦ 2♥,4,7♦,split,split,,
+784,784,llm,1,2♦ Q♠,12,7♦,hit,hit,,
+784,784,llm,2,2♦ Q♠ 4♦,16,7♦,hit,hit,,
+784,784,llm,3,2♦ Q♠ 4♦ 2♠,18,7♦,stand,stand,,
+784,784,llm,4,2♥ 7♠,9,7♦,hit,hit,,
+784,784,llm,5,2♥ 7♠ J♣,19,7♦,stand,stand,"win, win",2.0
+785,785,llm,0,5♥ 5♠,10,J♠,hit,hit,,
+785,785,llm,1,5♥ 5♠ 3♦,13,J♠,hit,hit,lose,-1.0
+786,786,llm,0,9♣ Q♣,19,K♦,stand,stand,win,1.0
+787,787,llm,0,2♥ 8♠,10,Q♣,none,none,lose,-1.0
+788,788,llm,0,3♠ 6♥,9,2♠,hit,hit,,
+788,788,llm,1,3♠ 6♥ 3♠,12,2♠,hit,hit,,
+788,788,llm,2,3♠ 6♥ 3♠ 5♦,17,2♠,stand,stand,win,1.0
+789,789,llm,0,K♣ 6♠,16,7♦,hit,hit,lose,-1.0
+790,790,llm,0,7♠ 5♠,12,Q♦,hit,hit,,
+790,790,llm,1,7♠ 5♠ 2♣,14,Q♦,hit,hit,lose,-1.0
+791,791,llm,0,3♥ 7♥,10,7♠,double,double,win,2.0
+792,792,llm,0,8♣ J♥,18,8♥,stand,stand,lose,-1.0
+793,793,llm,0,9♣ A♥,20,Q♠,stand,stand,win,1.0
+794,794,llm,0,3♥ 9♥,12,7♣,hit,hit,,
+794,794,llm,1,3♥ 9♥ 2♥,14,7♣,hit,hit,,
+794,794,llm,2,3♥ 9♥ 2♥ 6♥,20,7♣,stand,stand,win,1.0
+795,795,llm,0,Q♠ 8♠,18,K♦,stand,stand,push,0.0
+796,796,llm,0,3♣ A♣,14,7♦,hit,hit,,
+796,796,llm,1,3♣ A♣ 6♠,20,7♦,stand,stand,win,1.0
+797,797,llm,0,7♠ A♥,18,8♠,stand,stand,win,1.0
+798,798,llm,0,4♥ K♥,14,K♣,hit,hit,,
+798,798,llm,1,4♥ K♥ 2♥,16,K♣,hit,hit,,
+798,798,llm,2,4♥ K♥ 2♥ 2♦,18,K♣,stand,stand,lose,-1.0
+799,799,llm,0,8♠ J♣,18,A♣,stand,stand,win,1.0
+800,800,llm,0,9♠ K♦,19,5♠,stand,stand,win,1.0
+801,801,llm,0,3♥ A♦,14,3♥,hit,hit,,
+801,801,llm,1,3♥ A♦ 7♠,21,3♥,stand,stand,push,0.0
+802,802,llm,0,9♦ 10♦,19,3♣,stand,stand,win,1.0
+803,803,llm,0,5♥ 5♠,10,6♠,double,double,win,2.0
+804,804,llm,0,K♣ 7♠,17,3♣,stand,stand,lose,-1.0
+805,805,llm,0,7♠ K♣,17,10♥,stand,stand,win,1.0
+806,806,llm,0,A♦ 6♣,17,6♥,double,double,win,2.0
+807,807,llm,0,8♣ 8♣,16,A♠,split,split,,
+807,807,llm,1,8♣ A♠,19,A♠,stand,stand,,
+807,807,llm,2,8♣ A♣,19,A♠,stand,stand,"win, win",2.0
+808,808,llm,0,6♣ 4♠,10,Q♦,stand,hit,lose,-1.0
+809,809,llm,0,A♦ 6♠,17,A♣,none,none,lose,-1.0
+810,810,llm,0,9♣ 10♦,19,7♣,stand,stand,win,1.0
+811,811,llm,0,9♠ 8♥,17,A♣,none,none,lose,-1.0
+812,812,llm,0,5♦ 10♠,15,10♠,surrender,surrender,surrender,-0.5
+813,813,llm,0,A♥ 7♠,18,Q♥,hit,hit,,
+813,813,llm,1,A♥ 7♠ J♠,18,Q♥,stand,stand,win,1.0
+814,814,llm,0,10♠ A♥,21,8♦,none,none,blackjack,1.5
+815,815,llm,0,8♥ 8♦,16,6♠,split,split,,
+815,815,llm,1,8♥ 8♦,16,6♠,stand,stand,,
+815,815,llm,2,8♦ 10♣,18,6♠,stand,stand,"lose, lose",-2.0
+816,816,llm,0,6♣ 4♥,10,4♥,double,double,win,2.0
+817,817,llm,0,2♦ 9♦,11,9♥,double,double,win,2.0
+818,818,llm,0,8♣ 9♥,17,2♦,stand,stand,lose,-1.0
+819,819,llm,0,6♣ 3♦,9,9♣,hit,hit,,
+819,819,llm,1,6♣ 3♦ A♦,20,9♣,stand,stand,win,1.0
+820,820,llm,0,8♥ 8♥,16,8♦,split,split,,
+820,820,llm,1,8♥ Q♥,18,8♦,stand,stand,,
+820,820,llm,2,8♥ 8♠,16,8♦,hit,hit,"win, lose",0.0
+821,821,llm,0,7♣ A♠,18,6♠,double,double,win,2.0
+822,822,llm,0,8♥ J♥,18,J♠,stand,stand,win,1.0
+823,823,llm,0,5♦ 8♦,13,10♠,hit,hit,lose,-1.0
+824,824,llm,0,Q♦ Q♦,20,8♦,stand,stand,win,1.0
+825,825,llm,0,10♣ 8♣,18,9♠,stand,stand,lose,-1.0
+826,826,llm,0,Q♦ Q♣,20,K♦,none,none,lose,-1.0
+827,827,llm,0,2♣ 5♠,7,2♠,hit,hit,,
+827,827,llm,1,2♣ 5♠ J♥,17,2♠,stand,stand,lose,-1.0
+828,828,llm,0,Q♠ 3♠,13,J♦,hit,hit,,
+828,828,llm,1,Q♠ 3♠ 8♣,21,J♦,stand,stand,win,1.0
+829,829,llm,0,3♥ 8♣,11,Q♠,double,double,lose,-2.0
+830,830,llm,0,4♥ Q♣,14,4♦,stand,stand,lose,-1.0
+831,831,llm,0,4♣ J♠,14,9♦,hit,hit,,
+831,831,llm,1,4♣ J♠ A♥,15,9♦,hit,hit,,
+831,831,llm,2,4♣ J♠ A♥ 2♣,17,9♦,stand,stand,lose,-1.0
+832,832,llm,0,6♦ Q♠,16,5♦,stand,stand,lose,-1.0
+833,833,llm,0,6♣ 2♣,8,7♠,hit,hit,,
+833,833,llm,1,6♣ 2♣ 10♣,18,7♠,stand,stand,win,1.0
+834,834,llm,0,10♠ Q♥,20,J♠,stand,stand,push,0.0
+835,835,llm,0,7♥ 10♥,17,7♣,stand,stand,lose,-1.0
+836,836,llm,0,2♥ 2♣,4,J♥,hit,hit,,
+836,836,llm,1,2♥ 2♣ 9♥,13,J♥,hit,hit,lose,-1.0
+837,837,llm,0,K♦ 8♦,18,4♣,stand,stand,win,1.0
+838,838,llm,0,2♥ J♥,12,2♠,hit,hit,,
+838,838,llm,1,2♥ J♥ 4♠,16,2♠,stand,stand,lose,-1.0
+839,839,llm,0,8♥ 7♥,15,A♣,surrender,hit,surrender,-0.5
+840,840,llm,0,4♥ A♦,15,3♥,hit,hit,,
+840,840,llm,1,4♥ A♦ 3♣,18,3♥,stand,stand,win,1.0
+841,841,llm,0,J♣ 6♠,16,9♠,surrender,surrender,surrender,-0.5
+842,842,llm,0,10♣ K♣,20,4♠,stand,stand,win,1.0
+843,843,llm,0,A♠ Q♥,21,8♥,none,none,blackjack,1.5
+844,844,llm,0,9♥ J♥,19,2♦,stand,stand,win,1.0
+845,845,llm,0,4♣ 8♣,12,K♠,none,none,lose,-1.0
+846,846,llm,0,2♥ 4♠,6,10♥,hit,hit,,
+846,846,llm,1,2♥ 4♠ K♣,16,10♥,hit,hit,lose,-1.0
+847,847,llm,0,6♠ 4♠,10,10♠,hit,hit,,
+847,847,llm,1,6♠ 4♠ 9♣,19,10♠,stand,stand,lose,-1.0
+848,848,llm,0,8♦ 3♥,11,6♥,double,double,win,2.0
+849,849,llm,0,3♥ 3♠,6,3♣,split,split,,
+849,849,llm,1,3♥ 10♥,13,3♣,stand,stand,,
+849,849,llm,2,3♠ Q♣,13,3♣,hit,stand,,
+849,849,llm,3,3♠ Q♣ 6♣,19,3♣,stand,stand,"win, win",2.0
+850,850,llm,0,7♠ 9♠,16,10♦,surrender,surrender,surrender,-0.5
+851,851,llm,0,Q♣ 4♥,14,K♠,none,none,lose,-1.0
+852,852,llm,0,4♣ 7♠,11,2♦,double,double,push,0.0
+853,853,llm,0,A♠ 10♠,21,A♠,none,none,push,0.0
+854,854,llm,0,A♦ J♠,21,4♦,none,none,blackjack,1.5
+855,855,llm,0,Q♦ 5♣,15,6♣,stand,stand,lose,-1.0
+856,856,llm,0,9♥ 2♣,11,Q♥,double,double,lose,-2.0
+857,857,llm,0,A♣ 9♥,20,4♦,stand,stand,win,1.0
+858,858,llm,0,Q♥ 8♠,18,5♥,stand,stand,lose,-1.0
+859,859,llm,0,9♣ Q♥,19,10♥,stand,stand,win,1.0
+860,860,llm,0,7♦ 5♠,12,5♦,stand,stand,lose,-1.0
+861,861,llm,0,9♦ A♦,20,10♦,stand,stand,push,0.0
+862,862,llm,0,5♣ J♠,15,2♥,stand,stand,lose,-1.0
+863,863,llm,0,K♣ 5♦,15,K♣,none,none,lose,-1.0
+864,864,llm,0,2♥ 4♦,6,Q♣,hit,hit,,
+864,864,llm,1,2♥ 4♦ Q♠,16,Q♣,hit,hit,lose,-1.0
+865,865,llm,0,J♠ K♦,20,3♥,stand,stand,win,1.0
+866,866,llm,0,10♥ J♥,20,Q♠,stand,stand,push,0.0
+867,867,llm,0,5♦ Q♦,15,3♣,hit,stand,lose,-1.0
+868,868,llm,0,Q♠ A♥,21,Q♦,none,none,push,0.0
+869,869,llm,0,5♥ 6♦,11,10♠,double,double,win,2.0
+870,870,llm,0,10♦ 8♦,18,10♦,stand,stand,win,1.0
+871,871,llm,0,J♦ 6♥,16,A♦,surrender,surrender,surrender,-0.5
+872,872,llm,0,9♦ 4♦,13,Q♣,hit,hit,,
+872,872,llm,1,9♦ 4♦ A♥,14,Q♣,hit,hit,,
+872,872,llm,2,9♦ 4♦ A♥ 4♠,18,Q♣,stand,stand,push,0.0
+873,873,llm,0,9♦ A♠,20,6♣,stand,stand,win,1.0
+874,874,llm,0,7♥ A♦,18,10♣,hit,hit,,
+874,874,llm,1,7♥ A♦ K♥,18,10♣,stand,stand,win,1.0
+875,875,llm,0,Q♠ A♥,21,5♣,none,none,blackjack,1.5
+876,876,llm,0,K♥ 7♣,17,4♣,stand,stand,lose,-1.0
+877,877,llm,0,J♥ K♣,20,2♦,stand,stand,win,1.0
+878,878,llm,0,7♦ 3♠,10,5♣,double,double,lose,-2.0
+879,879,llm,0,2♠ 5♣,7,4♦,hit,hit,,
+879,879,llm,1,2♠ 5♣ 7♥,14,4♦,stand,stand,win,1.0
+880,880,llm,0,4♥ A♦,15,10♠,hit,hit,,
+880,880,llm,1,4♥ A♦ 7♠,12,10♠,hit,hit,,
+880,880,llm,2,4♥ A♦ 7♠ 9♣,21,10♠,stand,stand,win,1.0
+881,881,llm,0,10♥ 10♦,20,J♣,stand,stand,win,1.0
+882,882,llm,0,7♥ 6♦,13,9♥,hit,hit,,
+882,882,llm,1,7♥ 6♦ A♣,14,9♥,hit,hit,,
+882,882,llm,2,7♥ 6♦ A♣ 2♥,16,9♥,hit,hit,lose,-1.0
+883,883,llm,0,K♦ 8♣,18,5♥,stand,stand,win,1.0
+884,884,llm,0,10♠ J♣,20,7♠,stand,stand,win,1.0
+885,885,llm,0,8♣ A♦,19,3♦,stand,stand,win,1.0
+887,887,llm,0,8♠ 4♠,12,A♣,none,none,lose,-1.0
+888,888,llm,0,3♠ A♣,14,2♦,hit,hit,,
+888,888,llm,0,3♠ A♣,14,2♦,hit,hit,,
+888,888,llm,1,3♠ A♣ 9♠,13,2♦,hit,stand,,
+888,888,llm,1,3♠ A♣ 9♠,13,2♦,stand,stand,win,1.0
+888,888,llm,2,3♠ A♣ 9♠ 4♠,17,2♦,stand,stand,lose,-1.0
+889,889,llm,0,8♠ 7♠,15,4♦,stand,stand,lose,-1.0
+890,890,llm,0,K♦ 4♠,14,4♥,stand,stand,win,1.0
+891,891,llm,0,Q♠ Q♥,20,K♣,stand,stand,win,1.0
+892,892,llm,0,K♥ 10♦,20,2♥,stand,stand,lose,-1.0
+893,893,llm,0,Q♠ 5♥,15,K♣,surrender,surrender,surrender,-0.5
+894,894,llm,0,7♦ 4♠,11,7♠,double,double,win,2.0
+895,895,llm,0,4♦ 3♦,7,Q♥,hit,hit,,
+895,895,llm,1,4♦ 3♦ J♥,17,Q♥,stand,stand,lose,-1.0
+896,896,llm,0,Q♠ 9♥,19,A♣,none,none,lose,-1.0
+897,897,llm,0,K♦ K♣,20,6♣,stand,stand,win,1.0
+898,898,llm,0,8♥ 4♠,12,A♥,hit,hit,,
+898,898,llm,1,8♥ 4♠ A♥,13,A♥,hit,hit,lose,-1.0
+899,899,llm,0,3♦ 6♣,9,2♠,hit,hit,,
+899,899,llm,1,3♦ 6♣ 8♦,17,2♠,stand,stand,win,1.0
+900,900,llm,0,A♥ J♠,21,J♣,none,none,blackjack,1.5
+901,901,llm,0,A♥ 8♥,19,9♠,stand,stand,lose,-1.0
+902,902,llm,0,J♣ A♣,21,Q♠,none,none,blackjack,1.5
+903,903,llm,0,10♦ 7♠,17,5♠,stand,stand,lose,-1.0
+904,904,llm,0,J♠ 4♥,14,4♠,stand,stand,lose,-1.0
+905,905,llm,0,10♦ 4♦,14,A♠,hit,hit,lose,-1.0
+906,906,llm,0,2♥ 2♠,4,9♣,hit,hit,,
+906,906,llm,1,2♥ 2♠ A♣,15,9♣,hit,hit,,
+906,906,llm,2,2♥ 2♠ A♣ K♣,15,9♣,hit,hit,,
+906,906,llm,3,2♥ 2♠ A♣ K♣ 3♠,18,9♣,stand,stand,win,1.0
+907,907,llm,0,K♠ 2♣,12,3♣,hit,hit,,
+907,907,llm,1,K♠ 2♣ 4♠,16,3♣,stand,stand,lose,-1.0
+908,908,llm,0,6♦ 5♠,11,8♠,double,double,lose,-2.0
+909,909,llm,0,3♥ 7♥,10,10♠,hit,hit,,
+909,909,llm,1,3♥ 7♥ 6♥,16,10♠,stand,hit,win,1.0
+910,910,llm,0,Q♦ J♣,20,7♠,stand,stand,win,1.0
+911,911,llm,0,2♣ 9♠,11,6♠,stand,double,lose,-1.0
+912,912,llm,0,J♥ 7♠,17,5♥,stand,stand,lose,-1.0
+913,913,llm,0,J♠ Q♣,20,10♥,stand,stand,win,1.0
+914,914,llm,0,5♣ 2♠,7,Q♠,hit,hit,,
+914,914,llm,1,5♣ 2♠ 2♠,9,Q♠,hit,hit,,
+914,914,llm,2,5♣ 2♠ 2♠ 5♦,14,Q♠,hit,hit,,
+914,914,llm,3,5♣ 2♠ 2♠ 5♦ A♦,15,Q♠,hit,hit,lose,-1.0
+915,915,llm,0,Q♣ 8♥,18,5♥,stand,stand,push,0.0
+916,916,llm,0,2♠ J♥,12,8♠,hit,hit,,
+916,916,llm,1,2♠ J♥ A♦,13,8♠,hit,hit,,
+916,916,llm,2,2♠ J♥ A♦ 4♦,17,8♠,stand,stand,lose,-1.0
+917,917,llm,0,9♥ 10♣,19,5♥,stand,stand,win,1.0
+918,918,llm,0,2♣ J♦,12,7♠,hit,hit,,
+918,918,llm,1,2♣ J♦ 9♥,21,7♠,stand,stand,push,0.0
+919,919,llm,0,8♥ 5♠,13,2♠,stand,stand,win,1.0
+920,920,llm,0,K♠ 2♥,12,8♥,hit,hit,,
+920,920,llm,1,K♠ 2♥ 8♦,20,8♥,stand,stand,win,1.0
+921,921,llm,0,10♦ A♠,21,Q♦,none,none,blackjack,1.5
+922,922,llm,0,A♦ 6♠,17,A♠,none,none,lose,-1.0
+923,923,llm,0,Q♣ 9♠,19,3♣,stand,stand,lose,-1.0
+924,924,llm,0,5♣ 2♣,7,5♦,hit,hit,,
+924,924,llm,1,5♣ 2♣ J♠,17,5♦,stand,stand,win,1.0
+925,925,llm,0,10♠ K♣,20,10♦,none,none,lose,-1.0
+926,926,llm,0,9♥ 9♣,18,3♦,split,split,,
+926,926,llm,1,9♥ K♥,19,3♦,stand,stand,,
+926,926,llm,2,9♣ 9♥,18,3♦,stand,stand,"push, lose",-1.0
+927,927,llm,0,2♦ 5♥,7,7♠,hit,hit,,
+927,927,llm,1,2♦ 5♥ J♠,17,7♠,stand,stand,push,0.0
+928,928,llm,0,2♥ 4♦,6,2♥,hit,hit,,
+928,928,llm,1,2♥ 4♦ 5♦,11,2♥,hit,hit,,
+928,928,llm,2,2♥ 4♦ 5♦ 5♠,16,2♥,stand,stand,win,1.0
+929,929,llm,0,9♠ 10♣,19,K♥,stand,stand,win,1.0
+930,930,llm,0,8♥ 9♣,17,7♠,stand,stand,push,0.0
+931,931,llm,0,J♥ 2♣,12,6♠,stand,stand,lose,-1.0
+932,932,llm,0,6♥ 4♥,10,4♥,double,double,win,2.0
+933,933,llm,0,Q♥ K♣,20,7♣,stand,stand,win,1.0
+934,934,llm,0,4♣ 3♥,7,Q♦,hit,hit,,
+934,934,llm,1,4♣ 3♥ A♣,18,Q♦,hit,hit,,
+934,934,llm,2,4♣ 3♥ A♣ 6♣,14,Q♦,hit,hit,,
+934,934,llm,3,4♣ 3♥ A♣ 6♣ 2♣,16,Q♦,stand,hit,win,1.0
+935,935,llm,0,K♦ 2♣,12,5♠,stand,stand,win,1.0
+936,936,llm,0,3♣ 3♠,6,J♥,hit,hit,,
+936,936,llm,1,3♣ 3♠ K♠,16,J♥,hit,hit,lose,-1.0
+937,937,llm,0,3♦ 4♠,7,5♦,hit,hit,,
+937,937,llm,1,3♦ 4♠ 10♣,17,5♦,stand,stand,push,0.0
+938,938,llm,0,10♦ 9♣,19,10♠,stand,stand,lose,-1.0
+939,939,llm,0,Q♠ 10♥,20,9♦,stand,stand,win,1.0
+940,940,llm,0,3♣ 3♥,6,9♣,hit,hit,,
+940,940,llm,1,3♣ 3♥ 5♥,11,9♣,hit,hit,,
+940,940,llm,2,3♣ 3♥ 5♥ 2♠,13,9♣,hit,hit,,
+940,940,llm,3,3♣ 3♥ 5♥ 2♠ 6♣,19,9♣,stand,stand,push,0.0
+941,941,llm,0,3♣ A♥,14,Q♥,hit,hit,,
+941,941,llm,1,3♣ A♥ 8♥,12,Q♥,hit,hit,,
+941,941,llm,2,3♣ A♥ 8♥ 9♥,21,Q♥,stand,stand,win,1.0
+942,942,llm,0,9♠ K♠,19,8♥,stand,stand,push,0.0
+943,943,llm,0,6♦ 2♦,8,6♦,hit,hit,,
+943,943,llm,1,6♦ 2♦ A♣,19,6♦,stand,stand,win,1.0
+944,944,llm,0,8♥ 2♥,10,6♥,double,double,lose,-2.0
+945,945,llm,0,3♦ 10♠,13,5♦,stand,stand,win,1.0
+946,946,llm,0,6♦ 5♠,11,A♣,hit,double,,
+946,946,llm,1,6♦ 5♠ 7♦,18,A♣,stand,stand,push,0.0
+947,947,llm,0,Q♠ 2♣,12,K♣,hit,hit,,
+947,947,llm,1,Q♠ 2♣ 4♥,16,K♣,hit,hit,lose,-1.0
+948,948,llm,0,9♥ 4♦,13,K♦,hit,hit,lose,-1.0
+949,949,llm,0,5♦ 6♥,11,7♣,double,double,win,2.0
+950,950,llm,0,6♥ 3♥,9,J♠,hit,hit,,
+950,950,llm,1,6♥ 3♥ 9♦,18,J♠,stand,stand,win,1.0
+951,951,llm,0,A♣ 3♣,14,2♣,hit,hit,,
+951,951,llm,1,A♣ 3♣ J♠,14,2♣,stand,stand,win,1.0
+952,952,llm,0,8♥ A♦,19,A♦,stand,stand,win,1.0
+953,953,llm,0,4♥ 4♠,8,3♦,hit,hit,,
+953,953,llm,1,4♥ 4♠ 3♦,11,3♦,hit,hit,,
+953,953,llm,2,4♥ 4♠ 3♦ 10♦,21,3♦,stand,stand,win,1.0
+954,954,llm,0,Q♣ 3♣,13,8♣,hit,hit,,
+954,954,llm,1,Q♣ 3♣ 6♦,19,8♣,stand,stand,lose,-1.0
+955,955,llm,0,3♥ 8♣,11,K♦,double,double,win,2.0
+956,956,llm,0,7♠ 10♥,17,K♦,stand,stand,lose,-1.0
+957,957,llm,0,4♣ K♠,14,3♠,stand,stand,lose,-1.0
+958,958,llm,0,J♥ 4♦,14,K♣,surrender,hit,surrender,-0.5
+959,959,llm,0,J♣ 6♥,16,7♠,hit,hit,lose,-1.0
+960,960,llm,0,5♠ Q♣,15,J♦,surrender,surrender,surrender,-0.5
+961,961,llm,0,Q♥ 6♥,16,7♣,hit,hit,lose,-1.0
+962,962,llm,0,A♦ 5♦,16,5♣,double,double,win,2.0
+963,963,llm,0,5♦ 8♥,13,J♠,hit,hit,lose,-1.0
+964,964,llm,0,K♠ K♦,20,2♦,stand,stand,win,1.0
+965,965,llm,0,2♦ J♥,12,8♠,hit,hit,,
+965,965,llm,1,2♦ J♥ 2♣,14,8♠,hit,hit,,
+965,965,llm,2,2♦ J♥ 2♣ 5♣,19,8♠,stand,stand,win,1.0
+966,966,llm,0,5♦ 8♣,13,3♦,hit,stand,lose,-1.0
+967,967,llm,0,J♥ 8♥,18,Q♥,stand,stand,lose,-1.0
+968,968,llm,0,K♠ 10♣,20,6♠,stand,stand,win,1.0
+969,969,llm,0,K♣ 10♠,20,9♦,stand,stand,win,1.0
+970,970,llm,0,5♠ Q♠,15,6♥,stand,stand,win,1.0
+971,971,llm,0,6♣ 7♣,13,A♥,hit,hit,lose,-1.0
+972,972,llm,0,J♥ 2♥,12,4♦,stand,stand,win,1.0
+973,973,llm,0,3♣ A♦,14,9♠,hit,hit,,
+973,973,llm,1,3♣ A♦ 6♣,20,9♠,stand,stand,win,1.0
+974,974,llm,0,A♥ J♠,21,5♥,none,none,blackjack,1.5
+975,975,llm,0,8♠ 5♠,13,6♣,stand,stand,win,1.0
+976,976,llm,0,2♦ 3♣,5,7♠,hit,hit,,
+976,976,llm,1,2♦ 3♣ 9♦,14,7♠,hit,hit,,
+976,976,llm,2,2♦ 3♣ 9♦ 3♠,17,7♠,stand,stand,win,1.0
+977,977,llm,0,2♣ K♠,12,3♦,hit,hit,lose,-1.0
+978,978,llm,0,5♠ 10♠,15,3♣,stand,stand,lose,-1.0
+980,980,llm,0,Q♥ K♣,20,5♥,stand,stand,win,1.0
+981,981,llm,0,10♥ 7♦,17,4♣,stand,stand,lose,-1.0
+982,982,llm,0,K♠ 9♣,19,K♠,stand,stand,win,1.0
+983,983,llm,0,J♥ Q♣,20,J♠,stand,stand,push,0.0
+984,984,llm,0,K♠ 7♦,17,9♣,stand,stand,lose,-1.0
+985,985,llm,0,2♦ 7♣,9,9♥,hit,hit,,
+985,985,llm,1,2♦ 7♣ 8♠,17,9♥,stand,stand,lose,-1.0
+986,986,llm,0,J♥ 5♣,15,5♠,stand,stand,lose,-1.0
+987,987,llm,0,A♥ K♥,21,Q♥,none,none,blackjack,1.5
+989,989,llm,0,5♠ Q♠,15,8♦,hit,hit,lose,-1.0
+990,990,llm,0,J♠ 7♣,17,9♦,stand,stand,lose,-1.0
+991,991,llm,0,Q♦ 5♠,15,3♣,stand,stand,win,1.0
+992,992,llm,0,Q♠ 8♥,18,7♣,stand,stand,win,1.0
+993,993,llm,0,7♣ J♦,17,5♠,stand,stand,push,0.0
+994,994,llm,0,2♦ A♣,13,Q♦,hit,hit,,
+994,994,llm,1,2♦ A♣ 3♣,16,Q♦,hit,hit,,
+994,994,llm,2,2♦ A♣ 3♣ 5♥,21,Q♦,stand,stand,win,1.0
+995,995,llm,0,4♠ J♦,14,6♠,stand,stand,lose,-1.0
+996,996,llm,0,8♦ A♥,19,2♠,stand,stand,lose,-1.0
+997,997,llm,0,6♣ Q♠,16,10♦,surrender,surrender,surrender,-0.5
+998,998,llm,0,8♣ 10♠,18,K♣,none,none,lose,-1.0
+999,999,llm,0,3♠ 9♣,12,6♣,stand,stand,lose,-1.0

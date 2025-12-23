@@ -13,12 +13,16 @@ MODEL_INFO = {
     "claude-sonnet-4-5-20250929": {"name": "Claude Sonnet 4.5", "provider": "Anthropic"},
     "gemini-3-flash-preview": {"name": "Gemini 3 Flash", "provider": "Google"},
     "gemini-3-pro-preview": {"name": "Gemini 3 Pro", "provider": "Google"},
+    "glm-4-7": {"name": "GLM 4.7", "provider": "Z.ai"},
+    "grok-4-1-fast": {"name": "Grok 4.1 Fast", "provider": "xAI"},
 }
 
 PROVIDER_COLORS = {
     "OpenAI": "#10a37f",
     "Anthropic": "#d97706",
     "Google": "#4285f4",
+    "Z.ai": "#64748b",
+    "xAI": "#000000",
 }
 
 ERROR_CATEGORIES = {
